@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/themeChooserFragment">
+
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.example.bushv.example.presentation.fragments.StatisticsFragment"
+        android:label="StatisticsFragment" />
+    <fragment
+        android:id="@+id/completedThemesFragment"
+        android:name="com.example.bushv.example.presentation.fragments.CompletedThemesFragment"
+        android:label="CompletedThemesFragment" />
+    <fragment
+        android:id="@+id/themeChooserFragment"
+        android:name="com.example.bushv.example.presentation.fragments.ThemeChooserFragment"
+        android:label="ThemeChooserFragment" />
+    <fragment
+        android:id="@+id/favoriteExamplesFragment"
+        android:name="com.example.bushv.example.presentation.fragments.FavoriteExamplesFragment"
+        android:label="FavoriteExamplesFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.bushv.example.presentation.fragments.SettingsFragment"
+        android:label="SettingsFragment" />
+</navigation>

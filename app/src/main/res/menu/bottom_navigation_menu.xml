@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:id="@+id/statisticsFragment"
         android:icon="@drawable/main_menu_ic_statistics"
         android:title="@string/main_menu_statistics" />
     <item
+        android:id="@+id/completedThemesFragment"
         android:icon="@drawable/main_menu_ic_done"
         android:title="@string/main_menu_completed"/>
     <item
+        android:id="@+id/themeChooserFragment"
         android:icon="@drawable/main_menu_ic_main"
         android:title="@string/main_menu_main"/>
     <item
+        android:id="@+id/favoriteExamplesFragment"
         android:icon="@drawable/main_menu_ic_like"
         android:title="@string/main_menu_saved"/>
     <item
+        android:id="@+id/settingsFragment"
         android:icon="@drawable/main_menu_ic_settings"
         android:title="@string/main_menu_settings"/>
 
