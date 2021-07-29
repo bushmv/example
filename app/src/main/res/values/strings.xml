@@ -1,8 +1,27 @@
 <resources>
+    // strings
     <string name="app_name">Example</string>
     <string name="main_menu_statistics">статистика</string>
     <string name="main_menu_completed">завершенные</string>
     <string name="main_menu_main">главная</string>
     <string name="main_menu_saved">сохраненные</string>
     <string name="main_menu_settings">настройки</string>
+    <string name="theme_progress">%1$d%%</string>
+    <string name="time_to_complete">≈ %1$d мин </string>
+    <string name="theme_description_back_button">вернуться</string>
+    <string name="icon_for_words_count">icons for words count</string>
+    <string name="icon_for_english_level">icons for difficult level</string>
+    <string name="icon_for_time_to_complete">icons for time to complete</string>
+    <string name="icon_for_progress">icons for progress</string>
+    <string name="start_theme_button">начать</string>
+    <string name="question_mark">\?</string>
+
+    // plurals
+    <plurals name="example_count_plurals_template">
+        <item quantity="one">%1$d пример</item>
+        <item quantity="two">%1$d примера</item>
+        <item quantity="few">%1$d примера</item>
+        <item quantity="many">%1$d примеров</item>
+        <item quantity="other"> %1$d примеров</item>
+    </plurals>
 </resources>

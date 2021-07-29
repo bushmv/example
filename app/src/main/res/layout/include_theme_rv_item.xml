@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- change android:layout_width in cardView from "0" to match_parent to see view -->
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="8dp"
+        android:id="@+id/theme_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:elevation="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/show_theme_info"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:text="@string/question_mark" />
+
+            <TextView
+                android:id="@+id/theme_title"
+                tools:text="PLURALS FORM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:textSize="32sp" />
+
+            <GridLayout
+                android:id="@+id/grid_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rowCount="4"
+                android:columnCount="2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/CardThemeImageView"
+                    android:src="@drawable/theme_card_examples_count"
+                    android:contentDescription="@string/icon_for_words_count" />
+                <TextView
+                    android:id="@+id/theme_examples_count"
+                    style="@style/Base.Widget.MaterialComponents.TextView.CardThemeTextView"
+                    tools:text="13 примеров" />
+
+                <ImageView
+                    style="@style/CardThemeImageView"
+                    android:src="@drawable/theme_card_difficult_level"
+                    android:contentDescription="@string/icon_for_english_level" />
+                <TextView
+                    android:id="@+id/theme_english_level"
+                    style="@style/Base.Widget.MaterialComponents.TextView.CardThemeTextView"
+                    tools:text="INTERMEDIATE" />
+
+                <ImageView
+                    style="@style/CardThemeImageView"
+                    android:src="@drawable/theme_card_time_to_complete"
+                    android:contentDescription="@string/icon_for_time_to_complete" />
+                <TextView
+                    android:id="@+id/theme_time_to_complete"
+                    style="@style/Base.Widget.MaterialComponents.TextView.CardThemeTextView"
+                    tools:text="≈ 5мин" />
+
+                <ImageView
+                    style="@style/CardThemeImageView"
+                    android:src="@drawable/theme_card_progress"
+                    android:contentDescription="@string/icon_for_progress" />
+                <TextView
+                    android:id="@+id/theme_progress"
+                    style="@style/Base.Widget.MaterialComponents.TextView.CardThemeTextView"
+                    tools:text="20%" />
+            </GridLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/start_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:text="@string/start_theme_button"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</merge>
