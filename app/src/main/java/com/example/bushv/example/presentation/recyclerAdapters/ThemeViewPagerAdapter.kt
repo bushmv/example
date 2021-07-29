@@ -67,7 +67,7 @@ class ThemeViewPagerAdapter(
 
         private fun translationYAnimation(view: View, offset: Float, duration: Long) {
             view.animate()
-                .translationY(offset)
+                .translationYBy(offset)
                 .setDuration(duration)
                 .start()
         }
