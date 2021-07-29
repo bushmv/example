@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Example</string>
+    <string name="main_menu_statistics">статистика</string>
+    <string name="main_menu_completed">завершенные</string>
+    <string name="main_menu_main">главная</string>
+    <string name="main_menu_saved">сохраненные</string>
+    <string name="main_menu_settings">настройки</string>
 </resources>
