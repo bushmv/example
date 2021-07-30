@@ -1,5 +1,6 @@
 package com.example.bushv.example.presentation.recyclerAdapters
 
+import android.graphics.*
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -37,6 +38,8 @@ class ThemeViewPagerAdapter(
                     themeProgress.text = resources.getString(R.string.theme_progress, theme.progress)
                     moreInfoTitle.text = theme.title.split("/")[1]
                     moreInfoExplanation.text = theme.info
+                    val englishLevelBackground = Color.parseColor(theme.level.strColor)
+                    themeEnglishLevel.background.colorFilter = PorterDuffColorFilter(englishLevelBackground, PorterDuff.Mode.SRC_ATOP)
                 }
 
                 // onClickListeners
@@ -60,7 +63,7 @@ class ThemeViewPagerAdapter(
         private fun hideThemeDescription() {
             binding.themeCard.showThemeInfo.isClickable = true
             binding.moreInfoBack.isClickable = false
-            translationYAnimation(binding.themeCard.themeCard, -offset, 500)
+            translationYAnimation(binding.themeCard.themeCard, -offset, 300)
             scaleAnimation(binding.themeCard.themeCard, 1f, 1f, 500)
             alphaAnimation(binding.moreInfoSection, 0f, 500)
         }

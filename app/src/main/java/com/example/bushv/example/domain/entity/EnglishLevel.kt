@@ -1,11 +1,11 @@
 package com.example.bushv.example.domain.entity
 
-enum class EnglishLevel {
-    BEGINNER,
-    ELEMENTARY,
-    INTERMEDIATE,
-    UPPER_INTERMEDIATE,
-    ADVANCED;
+enum class EnglishLevel(val strColor: String) {
+    BEGINNER("#D9EAD3"),
+    ELEMENTARY("#365628"),
+    INTERMEDIATE("#FFE599"),
+    UPPER_INTERMEDIATE("#F6B26B"),
+    ADVANCED("#A30000");
 
     fun next(): EnglishLevel {
         return when(this) {

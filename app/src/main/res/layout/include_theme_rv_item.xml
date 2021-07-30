@@ -68,9 +68,13 @@
                     android:src="@drawable/theme_card_difficult_level"
                     android:contentDescription="@string/icon_for_english_level" />
                 <TextView
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/english_level_background"
                     android:id="@+id/theme_english_level"
                     style="@style/Base.Widget.MaterialComponents.TextView.CardThemeTextView"
-                    tools:text="INTERMEDIATE" />
+                    tools:text="ADVANCE" />
 
                 <ImageView
                     style="@style/CardThemeImageView"
