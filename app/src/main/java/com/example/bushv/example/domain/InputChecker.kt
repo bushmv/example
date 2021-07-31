@@ -49,7 +49,7 @@ class InputChecker(
         return displayedString
     }
 
-    fun prepareNextString(original: String, displayed: String) {
+    fun prepareNextExample(original: String, displayed: String) {
         reset(original, displayed)
         onStartNewExample(displayedString)
     }

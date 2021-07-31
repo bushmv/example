@@ -30,13 +30,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
-                android:alpha="0"
+                android:alpha="1"
                 android:bufferType="spannable"
                 android:gravity="center"
                 android:maxLines="4"
                 android:minLines="2"
                 android:padding="8dp"
-                android:scaleY="0"
+                android:scaleY="1"
                 android:singleLine="false"
                 android:textColor="#d9d9d9"
                 android:textSize="28sp" />
@@ -46,25 +46,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:alpha="0"
+                android:alpha="1"
                 android:bufferType="spannable"
                 android:ellipsize="none"
                 android:gravity="center"
                 android:maxLines="4"
                 android:minLines="2"
                 android:padding="8dp"
-                android:scaleY="0"
+                android:scaleY="1"
                 android:singleLine="false"
                 android:textSize="20sp" />
 
             <ProgressBar
+                android:layout_gravity="center_horizontal"
                 android:id="@+id/theme_card_progress"
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="4dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="64dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginEnd="64dp"
                 android:layout_marginBottom="16dp"
                 android:max="100"
                 android:progress="0"
@@ -99,7 +100,7 @@
                     android:contentDescription="@string/say_example_icon" />
 
                 <ImageView
-                    android:id="@+id/im_favoriteExample"
+                    android:id="@+id/isFavoriteExample"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:layout_margin="8dp"
@@ -110,15 +111,16 @@
                     android:contentDescription="@string/add_to_favorite_icon" />
 
                 <TextView
+                    android:textColor="@color/black"
                     android:id="@+id/tv_example_difficult"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:gravity="center_horizontal"
-                    tools:text="сложность: легко"
+                    android:text="@string/difficult"
                     android:textSize="22sp"
                     android:translationY="8dp"
-                    app:layout_constraintEnd_toStartOf="@+id/im_favoriteExample"
+                    app:layout_constraintEnd_toStartOf="@+id/isFavoriteExample"
                     app:layout_constraintStart_toEndOf="@+id/imageView2"
                     app:layout_constraintTop_toBottomOf="@+id/view" />
 
@@ -130,18 +132,18 @@
                     android:layout_marginRight="8dp"
                     android:elevation="64dp"
                     android:stepSize="1"
-                    android:value="50"
-                    android:valueFrom="0"
-                    android:valueTo="100"
+                    android:value="2"
+                    android:valueFrom="1"
+                    android:valueTo="5"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/im_favoriteExample"
+                    app:layout_constraintEnd_toStartOf="@+id/isFavoriteExample"
                     app:layout_constraintStart_toEndOf="@+id/imageView2"
                     app:layout_constraintTop_toBottomOf="@+id/tv_example_difficult"
-                    app:thumbColor="@android:color/holo_green_dark"
+                    app:thumbColor="#717171"
                     app:thumbRadius="5dp"
                     app:tickVisible="false"
-                    app:trackColorActive="@android:color/holo_green_dark"
-                    app:trackColorInactive="@android:color/holo_green_light" />
+                    app:trackColorActive="#717171"
+                    app:trackColorInactive="#DADADA" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>

@@ -68,7 +68,7 @@ class InputCheckerTest {
     fun `input checker must do nothing when user input wrong symbols`() {
         val original = "Example string"
         val displayed = "Exa___ s___ng"
-        inputChecker.prepareNextString(original, displayed)
+        inputChecker.prepareNextExample(original, displayed)
         val resultDisplayedString = displayed
         val userInput = "aporinmkglqqwzkhju"
 
