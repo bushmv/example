@@ -11,6 +11,10 @@ import androidx.cardview.widget.CardView
 import androidx.core.view.doOnPreDraw
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.NavDirections
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.FragmentNavigatorExtras
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.example.bushv.example.R
 import com.example.bushv.example.databinding.FragThemeChooserBinding
@@ -69,7 +73,14 @@ class ThemeChooserFragment: Fragment() {
     }
 
     private fun themeIsChosen(pair: Pair<TextView, CardView>, theme: Theme) {
-        Toast.makeText(requireContext(), "$theme", Toast.LENGTH_SHORT).show()
+        val direction: NavDirections = ThemeChooserFragmentDirections.actionThemeChooserFragmentToThemeFragment(theme)
+
+        val extras = FragmentNavigatorExtras(
+            pair.first to theme.title,
+            pair.second to theme.themeId.toString()
+        )
+
+        findNavController().navigate(direction, extras)
     }
 
 }

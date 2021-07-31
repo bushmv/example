@@ -18,7 +18,12 @@
     <fragment
         android:id="@+id/themeChooserFragment"
         android:name="com.example.bushv.example.presentation.fragments.ThemeChooserFragment"
-        android:label="ThemeChooserFragment" />
+        android:label="ThemeChooserFragment"
+        tools:layout="@layout/frag_theme_chooser">
+        <action
+            android:id="@+id/action_themeChooserFragment_to_themeFragment"
+            app:destination="@id/themeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/favoriteExamplesFragment"
         android:name="com.example.bushv.example.presentation.fragments.FavoriteExamplesFragment"
@@ -27,5 +32,16 @@
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.bushv.example.presentation.fragments.SettingsFragment"
-        android:label="SettingsFragment" />
+        android:label="SettingsFragment"
+        tools:layout="@layout/frag_settings" />
+    <fragment
+        android:id="@+id/themeFragment"
+        android:name="com.example.bushv.example.presentation.fragments.ThemeFragment"
+        android:label="ThemeFragment"
+        tools:layout="@layout/frag_theme_layout">
+        <argument
+            android:name="themeArg"
+            app:argType="com.example.bushv.example.domain.entity.Theme"
+            app:nullable="false" />
+    </fragment>
 </navigation>
