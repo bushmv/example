@@ -10,4 +10,10 @@ data class Example(
     var status: Status,
     val themeId: Int,
     val timeToCompleteInSeconds: Int
-)
+) {
+
+    fun upStatus() {
+        this.status = this.status.next()
+    }
+
+}
