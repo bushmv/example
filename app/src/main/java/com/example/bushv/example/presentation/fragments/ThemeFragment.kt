@@ -63,7 +63,7 @@ class ThemeFragment: Fragment() {
 
     private fun setTransitionName() {
         binding.apply {
-            card.transitionName = theme.themeId.toString()
+            card.transitionName = theme.id.toString()
             themeCardTitle.transitionName = theme.title
         }
     }

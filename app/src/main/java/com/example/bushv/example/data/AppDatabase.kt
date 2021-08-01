@@ -4,16 +4,16 @@ import com.example.bushv.example.domain.entity.EnglishLevel
 import com.example.bushv.example.domain.entity.Example
 import com.example.bushv.example.domain.entity.Theme
 
-interface Database {
+interface AppDatabase {
 
     // theme
-    suspend fun themeWith(englishLevel: EnglishLevel, offset: Int): Theme
-    suspend fun themeCount(englishLevel: EnglishLevel): Int
+    suspend fun loadTheme(englishLevel: EnglishLevel, offset: Int): Theme
+    suspend fun themesCount(englishLevel: EnglishLevel): Int
     suspend fun updateTheme(theme: Theme)
     suspend fun completedThemesFor(englishLevel: EnglishLevel): List<Theme>
 
     //examples
-    suspend fun examplesByThemeId(themeId: Int): List<Example>
+    suspend fun loadExamplesWithThemeId(themeId: Int): List<Example>
     suspend fun updateExample(example: Example)
     suspend fun favoriteExamples(): List<Example>
 

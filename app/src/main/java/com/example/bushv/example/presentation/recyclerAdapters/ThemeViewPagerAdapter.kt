@@ -1,6 +1,8 @@
 package com.example.bushv.example.presentation.recyclerAdapters
 
-import android.graphics.*
+import android.graphics.Color
+import android.graphics.PorterDuff
+import android.graphics.PorterDuffColorFilter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,7 +26,7 @@ class ThemeViewPagerAdapter(
             binding.apply {
 
                 // transition
-                themeCard.themeCard.transitionName = theme.themeId.toString()
+                themeCard.themeCard.transitionName = theme.id.toString()
                 themeCard.themeTitle.transitionName = theme.title
 
                 // set field
@@ -32,7 +34,7 @@ class ThemeViewPagerAdapter(
                 themeCard.apply {
                     themeTitle.text = theme.title.split("/")[0]
                     themeExamplesCount.text =
-                        resources.getQuantityString(R.plurals.example_count_plurals_template, theme.wordCount, theme.wordCount)
+                        resources.getQuantityString(R.plurals.example_count_plurals_template, theme.examplesCount, theme.examplesCount)
                     themeEnglishLevel.text = theme.level.name
                     themeTimeToComplete.text = resources.getString(R.string.time_to_complete, theme.timeToComplete)
                     themeProgress.text = resources.getString(R.string.theme_progress, theme.progress)

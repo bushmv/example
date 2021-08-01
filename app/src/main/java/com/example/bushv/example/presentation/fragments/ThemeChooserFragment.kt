@@ -6,13 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.core.view.doOnPreDraw
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.NavDirections
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
@@ -77,7 +75,7 @@ class ThemeChooserFragment: Fragment() {
 
         val extras = FragmentNavigatorExtras(
             pair.first to theme.title,
-            pair.second to theme.themeId.toString()
+            pair.second to theme.id.toString()
         )
 
         findNavController().navigate(direction, extras)

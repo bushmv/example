@@ -63,4 +63,15 @@ dependencies {
     // LiveData
     def livedata_version = "2.4.0-alpha02"
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$livedata_version")
+
+    //room
+    def room_version = "2.3.0"
+    implementation "androidx.room:room-ktx:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    // Coroutines
+    def coroutines_core_version = "1.5.1"
+    def coroutines_android_version = "1.5.1"
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_core_version")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_android_version")
 }
