@@ -8,11 +8,11 @@ import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.bushv.example.databinding.FragFavoriteExamplesBinding
+import com.example.bushv.example.databinding.FragSavedExamplesBinding
 
 class FavoriteExamplesFragment : Fragment() {
 
-    private lateinit var binding: FragFavoriteExamplesBinding
+    private lateinit var binding: FragSavedExamplesBinding
     private lateinit var adapter: SavedExamplesAdapter
     private val viewModel: FavoriteExamplesViewModel by viewModels()
 
@@ -21,7 +21,7 @@ class FavoriteExamplesFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragFavoriteExamplesBinding.inflate(inflater, container, false)
+        binding = FragSavedExamplesBinding.inflate(inflater, container, false)
         return binding.root
     }
 
