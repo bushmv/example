@@ -1,4 +1,4 @@
-package com.example.bushv.example.presentation.recyclerAdapters
+package com.example.bushv.example.presentation.chooseTheme
 
 import android.graphics.Color
 import android.graphics.PorterDuff
@@ -11,6 +11,7 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bushv.example.R
 import com.example.bushv.example.databinding.RvItemThemeCardBinding
+import com.example.bushv.example.domain.entity.Status
 import com.example.bushv.example.domain.entity.Theme
 import java.util.*
 
@@ -19,6 +20,22 @@ class ThemeViewPagerAdapter(
     private val onClick: (Pair<TextView, CardView>, Theme) -> Unit
 ) :
     RecyclerView.Adapter<ThemeViewPagerAdapter.ThemeViewHolder>() {
+
+    fun themeJustFinished(position: Int): Boolean {
+        return themes[position].status == Status.COMPLETED
+    }
+
+    fun currentTheme(position: Int): Theme {
+        return themes[position]
+    }
+
+    fun replaceTheme(position: Int) {
+        notifyItemChanged(position)
+    }
+
+    fun removeTheme(position: Int) {
+        notifyItemRemoved(position)
+    }
 
     class ThemeViewHolder(private val binding: RvItemThemeCardBinding) : RecyclerView.ViewHolder(binding.root) {
         private var offset: Float = 0f
@@ -36,7 +53,7 @@ class ThemeViewPagerAdapter(
                     themeExamplesCount.text =
                         resources.getQuantityString(R.plurals.example_count_plurals_template, theme.examplesCount, theme.examplesCount)
                     themeEnglishLevel.text = theme.level.name
-                    themeTimeToComplete.text = resources.getString(R.string.time_to_complete, theme.timeToComplete)
+                    themeTimeToComplete.text = String.format("≈ %.1f мин", theme.timeToComplete / 60) // seconds to minutes
                     themeProgress.text = resources.getString(R.string.theme_progress, theme.progress)
                     moreInfoTitle.text = theme.title.split("/")[1]
                     moreInfoExplanation.text = theme.info
@@ -101,6 +118,7 @@ class ThemeViewPagerAdapter(
 
     override fun onBindViewHolder(holder: ThemeViewHolder, position: Int) {
         val theme = themes[position]
+        holder.itemView.tag = "$position"
         holder.bind(theme, onClick)
     }
 

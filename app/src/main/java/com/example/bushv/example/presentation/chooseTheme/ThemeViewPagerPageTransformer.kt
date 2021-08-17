@@ -1,4 +1,4 @@
-package com.example.bushv.example.presentation
+package com.example.bushv.example.presentation.chooseTheme
 
 import android.view.View
 import androidx.viewpager2.widget.ViewPager2

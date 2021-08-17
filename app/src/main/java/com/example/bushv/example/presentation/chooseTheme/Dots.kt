@@ -1,4 +1,4 @@
-package com.example.bushv.example.presentation
+package com.example.bushv.example.presentation.chooseTheme
 
 import android.content.Context
 import android.widget.ImageView
@@ -9,7 +9,7 @@ import com.example.bushv.example.R
 class Dots(
     size: Int,
     private val context: Context,
-    container: LinearLayout
+    private val container: LinearLayout
 ) {
 
     private val dotsView: ArrayList<ImageView> = ArrayList(size)
@@ -40,13 +40,14 @@ class Dots(
     }
 
     fun changeSelectedDot(newPosition: Int) {
-        unselectDot(current)
+        if (current < dotsView.size) unselectDot(current)
         current = newPosition
         selectDot(current)
     }
 
-    fun removeDot() {
-        dotsView.removeAt(0)
+    fun removeDot(position: Int) {
+        container.removeViewAt(position)
+        dotsView.removeAt(position)
     }
 
 }
