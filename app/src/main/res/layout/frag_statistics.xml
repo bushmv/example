@@ -1,17 +1,319 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="statistics_fragment"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_statistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/primary_color"
+            android:elevation="64dp"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/card_statistics_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:shadowColor="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="54sp"
+                    tools:text="25 / 57" />
+
+                <TextView
+                    android:id="@+id/card_statistics_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    tools:text="(51%)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/examples_completed"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_statistics">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/beginner_statistics"
+                    style="@style/TextAppearance.AppCompat.Display4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="BEGINNER (95%)" />
+
+                <ProgressBar
+                    android:id="@+id/beginner_statistics_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/completed_beginner_progress_background" />
+
+                <TextView
+                    android:id="@+id/elementary_statistics"
+                    style="@style/TextAppearance.AppCompat.Display4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="ELEMENTARY (64%)" />
+
+                <ProgressBar
+                    android:id="@+id/elementary_statistics_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:progress="64"
+                    android:progressDrawable="@drawable/completed_elementary_progress_background" />
+
+                <TextView
+                    android:id="@+id/intermediate_statistics"
+                    style="@style/TextAppearance.AppCompat.Display4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="INTERMEDIATE (32%)" />
+
+                <ProgressBar
+                    android:id="@+id/intermediate_statistics_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:progress="32"
+                    android:progressDrawable="@drawable/completed_intermediate_progress_background" />
+
+                <TextView
+                    android:id="@+id/upper_intermediate_statistics"
+                    style="@style/TextAppearance.AppCompat.Display4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="UPPER_INTERMEDIATE (6%)" />
+
+                <ProgressBar
+                    android:id="@+id/upper_intermediate_statistics_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:progress="6"
+                    android:progressDrawable="@drawable/completed_upper_intermediate_progress_background" />
+
+                <TextView
+                    android:id="@+id/advanced_statistics"
+                    style="@style/TextAppearance.AppCompat.Display4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="ADVANCED (0%)" />
+
+                <ProgressBar
+                    android:id="@+id/advanced_statistics_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:progress="35"
+                    android:progressDrawable="@drawable/completed_advanced_progress_background" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:elevation="64dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="108dp" />
+
+                <View
+                    android:id="@+id/mon_column"
+                    style="@style/column"
+                    android:layout_height="15dp"
+                    app:layout_constraintEnd_toStartOf="@id/tue_column"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/tue_column"
+                    style="@style/column"
+                    android:layout_height="15dp"
+                    app:layout_constraintEnd_toStartOf="@id/wed_column"
+                    app:layout_constraintStart_toEndOf="@id/mon_column"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/wed_column"
+                    style="@style/column"
+                    android:layout_height="34dp"
+                    app:layout_constraintEnd_toStartOf="@id/thu_column"
+                    app:layout_constraintStart_toEndOf="@id/tue_column"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/thu_column"
+                    style="@style/column"
+                    android:layout_height="59dp"
+                    app:layout_constraintEnd_toStartOf="@id/fri_column"
+                    app:layout_constraintStart_toEndOf="@id/wed_column"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/fri_column"
+                    style="@style/column"
+                    android:layout_height="16dp"
+                    app:layout_constraintEnd_toStartOf="@id/sat_column"
+                    app:layout_constraintStart_toEndOf="@id/thu_column"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/sat_column"
+                    style="@style/column"
+                    android:layout_height="51dp"
+                    app:layout_constraintEnd_toStartOf="@id/sun_column"
+                    app:layout_constraintStart_toEndOf="@id/fri_column"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/sun_column"
+                    style="@style/column"
+                    android:layout_height="100dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/sat_column"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/mon_title"
+                    style="@style/Base.Widget.AppCompat.TextView.columnTitle"
+                    tools:text="Mon\n15.08\n(15)"
+                    app:layout_constraintLeft_toLeftOf="@id/mon_column"
+                    app:layout_constraintRight_toRightOf="@id/mon_column"
+                    app:layout_constraintTop_toBottomOf="@id/mon_column" />
+
+                <TextView
+                    android:id="@+id/tue_title"
+                    style="@style/Base.Widget.AppCompat.TextView.columnTitle"
+                    tools:text="Tue\n16.08\n(27)"
+                    app:layout_constraintLeft_toLeftOf="@id/tue_column"
+                    app:layout_constraintRight_toRightOf="@id/tue_column"
+                    app:layout_constraintTop_toBottomOf="@id/mon_column" />
+
+                <TextView
+                    android:id="@+id/wed_title"
+                    style="@style/Base.Widget.AppCompat.TextView.columnTitle"
+                    tools:text="Wed\n17.08\n(27)"
+                    app:layout_constraintLeft_toLeftOf="@id/wed_column"
+                    app:layout_constraintRight_toRightOf="@id/wed_column"
+                    app:layout_constraintTop_toBottomOf="@id/mon_column" />
+
+                <TextView
+                    android:id="@+id/thu_title"
+                    style="@style/Base.Widget.AppCompat.TextView.columnTitle"
+                    tools:text="Thu\n18.08\n(27)"
+                    app:layout_constraintLeft_toLeftOf="@id/thu_column"
+                    app:layout_constraintRight_toRightOf="@id/thu_column"
+                    app:layout_constraintTop_toBottomOf="@id/mon_column" />
+
+                <TextView
+                    android:id="@+id/fri_title"
+                    style="@style/Base.Widget.AppCompat.TextView.columnTitle"
+                    tools:text="Fri\n19.08\n(27)"
+                    app:layout_constraintLeft_toLeftOf="@id/fri_column"
+                    app:layout_constraintRight_toRightOf="@id/fri_column"
+                    app:layout_constraintTop_toBottomOf="@id/mon_column" />
+
+                <TextView
+                    android:id="@+id/sat_title"
+                    style="@style/Base.Widget.AppCompat.TextView.columnTitle"
+                    tools:text="Sat\n20.08\n(27)"
+                    app:layout_constraintLeft_toLeftOf="@id/sat_column"
+                    app:layout_constraintRight_toRightOf="@id/sat_column"
+                    app:layout_constraintTop_toBottomOf="@id/mon_column" />
+
+                <TextView
+                    android:id="@+id/sun_title"
+                    style="@style/Base.Widget.AppCompat.TextView.columnTitle"
+                    tools:text="Sun\n21.08\n(27)"
+                    app:layout_constraintLeft_toLeftOf="@id/sun_column"
+                    app:layout_constraintRight_toRightOf="@id/sun_column"
+                    app:layout_constraintTop_toBottomOf="@id/mon_column" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
