@@ -18,7 +18,7 @@ data class Theme(
     @ColumnInfo(name = "status") var status: Status,
     @ColumnInfo(name = "progress") var progress: Int,
     @ColumnInfo(name = "examplesCount") val examplesCount: Int,
-    @ColumnInfo(name = "timeToComplete") val timeToComplete: Int
+    @ColumnInfo(name = "timeToComplete") var timeToComplete: Float
 ) : Parcelable {
 
     fun titleEN(): String {

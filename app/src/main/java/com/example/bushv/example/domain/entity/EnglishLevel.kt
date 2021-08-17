@@ -16,15 +16,4 @@ enum class EnglishLevel(val strColor: String) {
             ADVANCED -> throw IllegalStateException("No exist next level for ${this.name}")
         }
     }
-
-    companion object {
-
-        fun startLevel(): EnglishLevel {
-            return BEGINNER
-        }
-
-        fun lastLevel(): EnglishLevel {
-            return ADVANCED
-        }
-    }
 }

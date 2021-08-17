@@ -3,7 +3,6 @@ package com.example.bushv.example.domain
 import com.example.bushv.example.domain.entity.Example
 import com.example.bushv.example.domain.entity.Status
 import java.util.*
-import kotlin.collections.ArrayList
 
 class ExampleCollection(
     private val examples: ArrayList<Example>
@@ -19,7 +18,8 @@ class ExampleCollection(
         } else {
             status = status.next()
             val practiceList = createExamples()
-            if (practiceList.isEmpty()) throw IllegalStateException("In theme with status \"not completed\" must be at least 1 practice example")
+            if (practiceList.isEmpty())
+                throw IllegalStateException("In theme with status \"not completed\" must be at least 1 practice example")
             queue.addAll(practiceList)
         }
     }
@@ -45,9 +45,7 @@ class ExampleCollection(
     }
 
     fun next(): Example {
-        val next = queue.pollFirst()
-        checkNotNull(next)
-        return next
+        return checkNotNull(queue.pollFirst())
     }
 
     fun upExampleStatus(example: Example) {

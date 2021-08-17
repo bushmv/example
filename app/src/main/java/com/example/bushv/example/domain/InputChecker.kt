@@ -35,7 +35,7 @@ class InputChecker(
         return !exampleCompleted() && !originalString[index].isLetter()
     }
 
-    fun exampleCompleted(): Boolean = index >= originalString.length
+    private fun exampleCompleted(): Boolean = index >= originalString.length
 
     fun changeDisplayedString(newTypedString: String) {
         displayedString.clear()
