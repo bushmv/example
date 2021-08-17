@@ -1,6 +1,5 @@
 package com.example.bushv.example.data
 
-import com.example.bushv.example.data.dao.RepositoryCache
 import com.example.bushv.example.domain.entity.EnglishLevel
 import com.example.bushv.example.domain.entity.Example
 import com.example.bushv.example.domain.entity.Theme
@@ -26,17 +25,15 @@ class Repository(private val appDatabase: AppDatabase) {
     }
 
     suspend fun initCache() {
-        var englishLevel = EnglishLevel.startLevel()
         loadIterator = ThemeLoadIterator(appDatabase)
 
-        while (englishLevel != EnglishLevel.lastLevel()) {
-            val countThemes = appDatabase.themesCount(englishLevel)
-            loadIterator.setThemeCounts(englishLevel, countThemes)
-            englishLevel = englishLevel.next()
+        for (i in AppPref.startEnglishLevel until EnglishLevel.values().size) {
+            val countThemes = appDatabase.themesCount(EnglishLevel.values()[i])
+            loadIterator.setThemeCounts(EnglishLevel.values()[i], countThemes)
         }
 
-        val themes: ArrayList<Theme> = ArrayList(3) // TODO 3 by default, change
-        while (themes.size < 3 && loadIterator.hasNextForLoad()) {
+        val themes: ArrayList<Theme> = ArrayList(4) // TODO 3 by default, change
+        while (themes.size < 4 && loadIterator.hasNextForLoad()) {
             val theme = loadIterator.loadNext()
             themes.add(theme)
         }
@@ -46,20 +43,24 @@ class Repository(private val appDatabase: AppDatabase) {
             repositoryCache.saveExamples(it.id, examples)
         }
         repositoryCache.saveThemes(themes)
+
         if (loadIterator.hasNextForLoad()) {
             val theme = loadIterator.loadNext()
             val examples = appDatabase.loadExamplesWithThemeId(theme.id) as ArrayList<Example>
-             repositoryCache.saveCachedNextTheme(theme)
+
+            repositoryCache.saveCachedNextTheme(theme)
             repositoryCache.saveCachedNextExamples(examples)
         }
-
     }
 
     fun themes(): ArrayList<Theme> = repositoryCache.cachedThemes()
     fun examplesForTheme(theme: Theme): ArrayList<Example> = repositoryCache.cachedExamplesForTheme(theme)
+
+    suspend fun loadExamplesForTheme(theme: Theme): ArrayList<Example> =
+        appDatabase.loadExamplesWithThemeId(theme.id) as ArrayList<Example>
     fun hasNextTheme(): Boolean  = repositoryCache.hasNextTheme()
 
-    fun themeHasCompleted(completedTheme: Theme) {
+    fun themeJustCompleted(completedTheme: Theme) {
         val completedExamples = repositoryCache.cachedExamplesForTheme(completedTheme)
         repositoryCache.update(completedTheme)
 
@@ -74,6 +75,24 @@ class Repository(private val appDatabase: AppDatabase) {
                 repositoryCache.saveCachedNextExamples(examplesForNextTheme)
             }
         }
+    }
+
+    suspend fun loadCompletedThemesFor(englishLevel: EnglishLevel): ArrayList<Theme> {
+        if (repositoryCache.hasCompletedThemesFor(englishLevel)) {
+            return repositoryCache.completedThemesFor(englishLevel)
+        }
+        val completedThemes = appDatabase.completedThemesFor(englishLevel) as ArrayList<Theme>
+        repositoryCache.saveCompletedThemesFor(englishLevel, completedThemes)
+        return completedThemes
+    }
+
+    suspend fun loadFavoriteExamples(): ArrayList<Example> {
+        if (repositoryCache.hasCachedFavoriteExamples()) {
+            return repositoryCache.favoriteExamples()
+        }
+        val favoriteExamples = appDatabase.favoriteExamples() as ArrayList<Example>
+        repositoryCache.saveFavoriteExamples(favoriteExamples)
+        return repositoryCache.favoriteExamples()
     }
 
     suspend fun save() {
