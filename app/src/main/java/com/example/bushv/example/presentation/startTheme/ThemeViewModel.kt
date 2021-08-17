@@ -1,9 +1,10 @@
-package com.example.bushv.example.presentation
+package com.example.bushv.example.presentation.startTheme
 
 import android.graphics.Color
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.bushv.example.data.AppPref
 import com.example.bushv.example.data.Repository
 import com.example.bushv.example.domain.ExampleCollection
 import com.example.bushv.example.domain.InputChecker
@@ -12,13 +13,13 @@ import com.example.bushv.example.domain.entity.Status
 import com.example.bushv.example.domain.entity.Theme
 import com.example.bushv.example.utility.extentions.addForegroundSpan
 import java.util.*
-import kotlin.collections.ArrayList
+import kotlin.math.roundToInt
 
 class ThemeViewModel(val theme: Theme) : ViewModel() {
 
     private val repository = Repository.instance()
     private val examples: ArrayList<Example> =
-        repository.examplesForTheme(theme) as ArrayList<Example>
+        repository.examplesForTheme(theme)
     private val exampleCollection = ExampleCollection(examples)
 
     private var percentToReplaceChar: Float = 0.5f
@@ -43,7 +44,7 @@ class ThemeViewModel(val theme: Theme) : ViewModel() {
     private fun newExample(sb: StringBuilder) {
         spannableDisplayedString.updateSpan(sb = sb)
         _eventLiveData.value = Event.NewExample(
-            currentExample.sentenceRU.addForegroundSpan(Color.BLUE),
+            currentExample.sentenceRU.addForegroundSpan(Color.parseColor(AppPref.colorStr)),
             spannableDisplayedString.spannableString,
             currentExample.isFavorite
         )
@@ -54,6 +55,7 @@ class ThemeViewModel(val theme: Theme) : ViewModel() {
         if (isFirstRun) isFirstRun = false
         else progress += progressStep
         _eventLiveData.value = Event.ProgressChanged(progress.toInt())
+        theme.progress = progress.roundToInt()
     }
 
     private fun updateSpannableString(index: Int, sb: StringBuilder) {
@@ -63,10 +65,17 @@ class ThemeViewModel(val theme: Theme) : ViewModel() {
 
     private fun exampleCompleted() {
         exampleCollection.upExampleStatus(currentExample)
+        if (currentExample.status == Status.COMPLETED) {
+            AppPref.increaseCompletedExample(theme.level)
+        }
+        theme.timeToComplete -= currentExample.sentenceEN.length
         if (exampleCollection.hasExamples()) {
             prepareNextExample()
         } else {
             theme.status = Status.COMPLETED
+            theme.timeToComplete = 0f
+            theme.progress = 100
+            AppPref.increaseCompletedThemes(theme.level)
             _eventLiveData.value = Event.ThemeCompleted
         }
     }
@@ -124,5 +133,4 @@ class ThemeViewModel(val theme: Theme) : ViewModel() {
         val displayedString = formDisplayedString(pureString)
         inputChecker.changeDisplayedString(displayedString)
     }
-
 }

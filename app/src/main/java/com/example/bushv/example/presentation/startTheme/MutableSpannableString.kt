@@ -1,4 +1,4 @@
-package com.example.bushv.example.presentation
+package com.example.bushv.example.presentation.startTheme
 
 import android.graphics.Color
 import android.graphics.Typeface
@@ -6,6 +6,7 @@ import android.text.Spannable
 import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
 import android.text.style.StyleSpan
+import com.example.bushv.example.data.AppPref
 
 class MutableSpannableString(
     private val startSpan: Int,
@@ -32,7 +33,7 @@ class MutableSpannableString(
             )
         }
         spannableString.setSpan(
-            ForegroundColorSpan(Color.BLUE),
+            ForegroundColorSpan(AppPref.color),
             startSpan,
             endSpan,
             Spannable.SPAN_EXCLUSIVE_EXCLUSIVE

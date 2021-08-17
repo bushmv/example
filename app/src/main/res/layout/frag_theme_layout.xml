@@ -39,7 +39,8 @@
                 android:scaleY="1"
                 android:singleLine="false"
                 android:textColor="#d9d9d9"
-                android:textSize="28sp" />
+                android:textSize="26sp"
+                tools:text="It's a little hard to see with the city lights, but that W-shaped constellation is Cassiopeia"/>
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/theme_card_sentenceRU"
@@ -55,7 +56,8 @@
                 android:padding="8dp"
                 android:scaleY="1"
                 android:singleLine="false"
-                android:textSize="20sp" />
+                android:textSize="18sp"
+                tools:text="В свете городских огней его трудновато разглядеть, но это W-образное {созвездие} - Кассиопея"/>
 
             <ProgressBar
                 android:layout_gravity="center_horizontal"
@@ -69,7 +71,10 @@
                 android:layout_marginBottom="16dp"
                 android:max="100"
                 android:progress="0"
-                android:progressDrawable="@drawable/theme_progress_background" />
+                android:scaleX="0"
+                android:progressDrawable="@drawable/theme_progress_background"
+                tools:progress="25"
+                tools:scaleX="1"/>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/theme_card_settings"
@@ -89,10 +94,12 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/image_say_example_en"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:layout_margin="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
                     android:src="@drawable/say_example_icon"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -100,31 +107,22 @@
                     android:contentDescription="@string/say_example_icon" />
 
                 <ImageView
+
                     android:id="@+id/isFavoriteExample"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:layout_margin="8dp"
-                    android:src="@drawable/like_example_icon"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/like"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@id/view"
                     android:contentDescription="@string/add_to_favorite_icon" />
 
-                <TextView
-                    android:textColor="@color/black"
-                    android:id="@+id/tv_example_difficult"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:gravity="center_horizontal"
-                    android:text="@string/difficult"
-                    android:textSize="22sp"
-                    android:translationY="8dp"
-                    app:layout_constraintEnd_toStartOf="@+id/isFavoriteExample"
-                    app:layout_constraintStart_toEndOf="@+id/imageView2"
-                    app:layout_constraintTop_toBottomOf="@+id/view" />
-
                 <com.google.android.material.slider.Slider
+                    android:visibility="invisible"
+                    app:haloRadius="0dp"
                     android:id="@+id/theme_card_slider"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -132,20 +130,22 @@
                     android:layout_marginRight="8dp"
                     android:elevation="64dp"
                     android:stepSize="1"
-                    android:value="2"
+                    android:value="3"
                     android:valueFrom="1"
                     android:valueTo="5"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_say_example_en"
                     app:layout_constraintEnd_toStartOf="@+id/isFavoriteExample"
-                    app:layout_constraintStart_toEndOf="@+id/imageView2"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_example_difficult"
+                    app:layout_constraintStart_toEndOf="@+id/image_say_example_en"
+                    app:layout_constraintTop_toTopOf="@+id/image_say_example_en"
                     app:thumbColor="#717171"
                     app:thumbRadius="5dp"
                     app:tickVisible="false"
                     app:trackColorActive="#717171"
-                    app:trackColorInactive="#DADADA" />
+                    app:trackColorInactive="#DADADA"
+                    tools:visibility="visible"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -153,13 +153,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/keyboard"
-        layout="@layout/keyboard_layout"
+        layout="@layout/keyboard"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:padding="8dp"
         android:elevation="65dp"
         android:transitionName="theme"
         android:layout_margin="8dp"
@@ -167,7 +166,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:gravity="center"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="32sp"
         tools:text="PLURALS FORM"
         app:layout_constraintEnd_toEndOf="parent"

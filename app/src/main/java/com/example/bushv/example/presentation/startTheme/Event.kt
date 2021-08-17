@@ -1,4 +1,4 @@
-package com.example.bushv.example.presentation
+package com.example.bushv.example.presentation.startTheme
 
 import android.text.SpannableString
 import android.text.SpannableStringBuilder

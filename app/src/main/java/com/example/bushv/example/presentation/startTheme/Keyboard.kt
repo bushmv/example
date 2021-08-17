@@ -1,4 +1,4 @@
-package com.example.bushv.example.presentation
+package com.example.bushv.example.presentation.startTheme
 
 import android.content.Context
 import android.graphics.Color
@@ -77,10 +77,4 @@ class Keyboard(
             .start()
     }
 
-    fun hideKeyboardAnimation() {
-        container.animate()
-            .translationYBy(750f)
-            .setDuration(500)
-            .start()
-    }
 }
