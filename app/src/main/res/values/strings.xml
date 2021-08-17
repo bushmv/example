@@ -18,6 +18,28 @@
     <string name="say_example_icon">say example icon</string>
     <string name="add_to_favorite_icon">add to favorite icon</string>
     <string name="difficult">сложность</string>
+    <string name="very_easy">легче простого</string>
+    <string name="easy">легко</string>
+    <string name="middle">средне</string>
+    <string name="hard">сложно</string>
+    <string name="very_hard">I\'m from London</string>
+    <string name="got_it">got it</string>
+    <string name="completed_themes">Завершенные темы</string>
+    <string name="saved_examples">сохраненные примеры</string>
+    <string name="icon_in_shape_of_heart">icon in shape of heart</string>
+    <string name="settings">настройки</string>
+    <string name="color_for_word">цвет выделения слов</string>
+    <string name="show_splash_screen">показывать стартовый экран</string>
+    <string name="start_english_level">начальный уровень сложности</string>
+    <string name="text_explanations_when_changes_will_happen">(изменения вступят в силу после перезапуска приложения)</string>
+    <string name="beginner">beginner</string>
+    <string name="elementary">elementary</string>
+    <string name="intermediate">intermediate</string>
+    <string name="upper_intermediate">upper-intermediate</string>
+    <string name="advanced">advanced</string>
+    <string name="tap_in_any_place">нажмите в любом месте для продолжения</string>
+    <string name="no_show_more">больше не показывать</string>
+    <string name="examples_completed">примеров пройдено</string>
 
     // plurals
     <plurals name="example_count_plurals_template">
