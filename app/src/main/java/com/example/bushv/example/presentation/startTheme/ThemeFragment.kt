@@ -21,7 +21,7 @@ import com.example.bushv.example.databinding.FragThemeLayoutBinding
 import com.example.bushv.example.domain.entity.EnglishLevel
 import com.example.bushv.example.domain.entity.Theme
 import com.example.bushv.example.presentation.ThemeViewModelFactory
-import com.example.bushv.example.utility.extentions.animateReplacingText
+import com.example.bushv.example.utility.extensions.animateReplacingText
 import java.util.*
 import java.util.concurrent.TimeUnit
 

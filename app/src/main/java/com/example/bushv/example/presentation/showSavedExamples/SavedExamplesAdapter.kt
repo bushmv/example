@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.bushv.example.data.AppPref
 import com.example.bushv.example.databinding.RvItemSavedExampleBinding
 import com.example.bushv.example.domain.entity.Example
-import com.example.bushv.example.utility.extentions.addForegroundSpan
+import com.example.bushv.example.utility.extensions.addForegroundSpan
 
 class SavedExamplesAdapter(
     private var allExamples: ArrayList<Example>,

@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.bushv.example.data.AppPref
 import com.example.bushv.example.databinding.RvItemCompletedExampleBinding
 import com.example.bushv.example.domain.entity.Example
-import com.example.bushv.example.utility.extentions.addForegroundSpan
+import com.example.bushv.example.utility.extensions.addForegroundSpan
 
 class CompletedExamplesAdapter(private var examples: ArrayList<Example>) :
     RecyclerView.Adapter<CompletedExamplesAdapter.CompletedExampleViewHolder>() {

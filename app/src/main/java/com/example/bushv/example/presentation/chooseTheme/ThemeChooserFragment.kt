@@ -20,8 +20,8 @@ import com.example.bushv.example.R
 import com.example.bushv.example.databinding.FragThemeChooserBinding
 import com.example.bushv.example.domain.entity.Theme
 import com.example.bushv.example.presentation.ChooserThemeViewModel
-import com.example.bushv.example.utility.extentions.fadeInAnimate
-import com.example.bushv.example.utility.extentions.scaleInAnimate
+import com.example.bushv.example.utility.extensions.fadeInAnimate
+import com.example.bushv.example.utility.extensions.scaleInAnimate
 
 class ThemeChooserFragment: Fragment() {
 

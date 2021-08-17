@@ -11,7 +11,7 @@ import com.example.bushv.example.domain.InputChecker
 import com.example.bushv.example.domain.entity.Example
 import com.example.bushv.example.domain.entity.Status
 import com.example.bushv.example.domain.entity.Theme
-import com.example.bushv.example.utility.extentions.addForegroundSpan
+import com.example.bushv.example.utility.extensions.addForegroundSpan
 import java.util.*
 import kotlin.math.roundToInt
 
