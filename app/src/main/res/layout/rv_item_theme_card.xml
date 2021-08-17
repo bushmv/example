@@ -23,13 +23,15 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:fontFamily="casual"
             android:id="@+id/more_info_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            tools:text="plural forms"
-            android:textSize="28sp"
-            android:textStyle="bold"
+            tools:text="множественное число"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
             android:layout_marginBottom="16dp"/>
 
         <TextView
@@ -49,5 +51,21 @@
             android:textColor="@color/black"
             android:backgroundTint="@color/white"/>
     </LinearLayout>
+
+    <TextView
+        android:elevation="128dp"
+        android:scaleX="5"
+        android:scaleY="5"
+        android:alpha="0"
+        android:id="@+id/completedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="45"
+        android:text="COMPLETED"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

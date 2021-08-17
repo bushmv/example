@@ -7,7 +7,7 @@
     <androidx.cardview.widget.CardView
         app:cardCornerRadius="8dp"
         android:id="@+id/theme_card"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
         android:elevation="64dp"
@@ -32,19 +32,22 @@
                 android:gravity="center"
                 android:textSize="24sp"
                 android:textColor="@color/black"
-                android:text="@string/question_mark" />
+                android:text="@string/question_mark"
+                android:background="@drawable/question_mark_background"/>
 
             <TextView
                 android:id="@+id/theme_title"
-                tools:text="PLURALS FORM"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="16dp"
-                android:fontFamily="@font/roboto"
+                android:fontFamily="casual"
                 android:gravity="center_horizontal"
                 android:padding="8dp"
-                android:textSize="32sp" />
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="32sp"
+                tools:text="PLURALS FORM" />
 
             <GridLayout
                 android:id="@+id/grid_layout"

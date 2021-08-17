@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:background="@drawable/img_border"
+        android:id="@+id/explanation_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1.4:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/explanation_text_card_wrapper"
+        app:cardBackgroundColor="#787878"
+        app:cardCornerRadius="8dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/explanation_image"
+        app:layout_constraintTop_toBottomOf="@id/explanation_image"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="8dp"
+            android:id="@+id/explanation_description"
+            style="@style/TextAppearance.AppCompat.Display4"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="Выберите понравившуюся категорию"
+            app:layout_constraintTop_toBottomOf="@id/explanation_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
