@@ -1,17 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="settings"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:orientation="vertical">
+
+        <TextView
+            android:background="@color/primary_color_variant"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/settings"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/color_for_word"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/green_color"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/color_background"
+                android:backgroundTint="#006800"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:tag="#006800" />
+
+            <View
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/orange_color"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/color_background"
+                android:backgroundTint="#FF9900"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:tag="#FF9900" />
+
+            <View
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/blue_color"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/color_background"
+                android:backgroundTint="#0000CC"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:tag="#0000CC" />
+
+            <View
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/purple_color"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/color_background"
+                android:backgroundTint="#7A00CC"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:tag="#7A00CC" />
+
+            <View
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/red_color"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/color_background"
+                android:backgroundTint="#FF0000"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:tag="#FF0000" />
+
+            <View
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/turquoise_color"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/color_background"
+                android:backgroundTint="#00FFFF"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:tag="#00FFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="@string/show_splash_screen"
+                android:textSize="24sp" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/show_splash_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:text="@string/start_english_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="16sp"
+            android:text="@string/text_explanations_when_changes_will_happen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/english_level_radio_group"
+            android:layout_marginTop="8dp"
+            android:checkedButton="@id/beginner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:checked="false"
+                android:layout_marginStart="8dp"
+                android:id="@+id/beginner"
+                android:textSize="22sp"
+                android:text="@string/beginner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:layout_marginStart="8dp"
+                android:id="@+id/elementary"
+                android:textSize="22sp"
+                android:text="@string/elementary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:layout_marginStart="8dp"
+                android:id="@+id/intermediate"
+                android:textSize="22sp"
+                android:text="@string/intermediate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:layout_marginStart="8dp"
+                android:id="@+id/upper_intermediate"
+                android:textSize="22sp"
+                android:text="@string/upper_intermediate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:layout_marginStart="8dp"
+                android:id="@+id/advanced"
+                android:textSize="22sp"
+                android:text="@string/advanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>
