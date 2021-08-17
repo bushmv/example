@@ -3,7 +3,7 @@ package com.example.bushv.example.data
 import com.example.bushv.example.domain.entity.EnglishLevel
 import com.example.bushv.example.domain.entity.Theme
 
-// class iterator that load themes from db and know about offset for theme in db table
+// ThemeLoadIterator loads themes from db and know about offset for each theme in english level in db table
 class ThemeLoadIterator(private val database: AppDatabase) {
 
     private var countThemesForEachEnglishLevel: ArrayList<Pair<EnglishLevel, Int>> = ArrayList()
