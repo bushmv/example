@@ -1,8 +1,9 @@
-package com.example.bushv.example.utility.extentions
+package com.example.bushv.example.utility.extensions
 
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
+import android.view.View
 import android.widget.TextView
 
 // add string span between "{" and "}" symbols
@@ -33,4 +34,24 @@ fun TextView.animateReplacingText(replaceCallback: (TextView) -> Unit) {
                 .setDuration(300)
                 .start()
         }.start()
+}
+
+fun View.fadeInAnimate(duration: Long = 500, startDelay: Long = 250) {
+    this.alpha = 0f
+    this.animate()
+        .alpha(1f)
+        .setDuration(duration)
+        .setStartDelay(startDelay)
+        .start()
+}
+
+fun View.scaleInAnimate(duration: Long = 500, startDelay: Long = 250) {
+    this.scaleX = 0f
+    this.scaleY = 0f
+    this.animate()
+        .scaleX(1f)
+        .scaleY(1f)
+        .setDuration(duration)
+        .setStartDelay(startDelay)
+        .start()
 }
