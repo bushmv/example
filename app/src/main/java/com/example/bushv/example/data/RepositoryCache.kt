@@ -1,4 +1,4 @@
-package com.example.bushv.example.data.dao
+package com.example.bushv.example.data
 
 import com.example.bushv.example.domain.entity.EnglishLevel
 import com.example.bushv.example.domain.entity.Example
@@ -11,22 +11,35 @@ class RepositoryCache {
 
     private var cachedThemes: ArrayList<Theme> = ArrayList()
     private var cachedExamplesByThemeId: MutableMap<Int, ArrayList<Example>> = HashMap()
-    private var cachedCompletedThemesByEnglishLevel: MutableMap<EnglishLevel, ArrayList<Theme>> = EnumMap(EnglishLevel::class.java)
+    private var cachedCompletedThemesByEnglishLevel: MutableMap<EnglishLevel, ArrayList<Theme>> =
+        EnumMap(EnglishLevel::class.java)
     private var cachedFavoriteExamples: ArrayList<Example> = arrayListOf()
 
     // this 2 field loaded before it will be needed for fast replace when current theme will be completed
     private var cachedNextTheme: Theme? = null
     private var cachedNextExamples: ArrayList<Example>? = null
 
-    fun saveThemes(themes: ArrayList<Theme>) { cachedThemes = themes }
-    fun saveExamples(themeIdKey: Int, examples: ArrayList<Example>) { cachedExamplesByThemeId[themeIdKey] = examples }
+    fun saveThemes(themes: ArrayList<Theme>) {
+        cachedThemes = themes
+    }
 
-    fun saveCachedNextTheme(theme: Theme) { cachedNextTheme = theme }
-    fun saveCachedNextExamples(examples: ArrayList<Example>) { cachedNextExamples = examples }
+    fun saveExamples(themeIdKey: Int, examples: ArrayList<Example>) {
+        cachedExamplesByThemeId[themeIdKey] = examples
+    }
+
+    fun saveCachedNextTheme(theme: Theme) {
+        cachedNextTheme = theme
+    }
+
+    fun saveCachedNextExamples(examples: ArrayList<Example>) {
+        cachedNextExamples = examples
+    }
+
     fun hasNextTheme(): Boolean = cachedNextTheme != null
 
     fun cachedThemes() = cachedThemes
-    fun cachedExamplesForTheme(theme: Theme): ArrayList<Example> = cachedExamplesByThemeId[theme.id] as ArrayList<Example>
+    fun cachedExamplesForTheme(theme: Theme): ArrayList<Example> =
+        cachedExamplesByThemeId[theme.id] as ArrayList<Example>
 
     fun hasCompletedThemesFor(englishLevel: EnglishLevel): Boolean =
         cachedCompletedThemesByEnglishLevel.containsKey(englishLevel)
@@ -36,12 +49,24 @@ class RepositoryCache {
     }
 
     fun completedThemesFor(englishLevel: EnglishLevel): ArrayList<Theme> {
-        return cachedCompletedThemesByEnglishLevel[englishLevel] ?:
-            throw IllegalStateException("Completed cached list at key $englishLevel in repositoryCache must not be null")
+        return cachedCompletedThemesByEnglishLevel[englishLevel]
+            ?: throw IllegalStateException("Completed cached list at key $englishLevel in repositoryCache must not be null")
     }
 
     fun hasCachedFavoriteExamples(): Boolean = cachedFavoriteExamples.isNotEmpty()
-    fun favoriteExamples(): ArrayList<Example> = cachedFavoriteExamples
+    fun saveFavoriteExamples(favoriteExamples: ArrayList<Example>) {
+        cachedFavoriteExamples = favoriteExamples
+    }
+
+    fun favoriteExamples(): ArrayList<Example> {
+        // currentFavoritesInCache - now in cache
+        // cachedFavoriteExamples - cached favorites from db
+        val currentFavoritesInCache = ArrayList<Example>()
+        cachedExamplesByThemeId.entries.forEach { entry ->
+            currentFavoritesInCache.addAll(entry.value.filter { it.isFavorite })
+        }
+        return ArrayList(currentFavoritesInCache + cachedFavoriteExamples)
+    }
 
     fun update(completedTheme: Theme) {
         updateFavoritesExamples(completedTheme)
@@ -64,9 +89,9 @@ class RepositoryCache {
         cachedThemes.removeAt(indexCompletedTheme)
         cachedExamplesByThemeId.remove(completedTheme.id)
         cachedNextTheme?.let {
-            cachedThemes.add(it)
-            cachedExamplesByThemeId[it.id] = cachedNextExamples ?:
-                    throw IllegalStateException("Theme $it hasn't completed, but no one example for it in database")
+            cachedThemes.add(indexCompletedTheme, it)
+            cachedExamplesByThemeId[it.id] = cachedNextExamples
+                ?: throw IllegalStateException("Theme $it hasn't completed, but no one example for it in database")
         }
     }
 
