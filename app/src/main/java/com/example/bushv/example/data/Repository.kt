@@ -6,6 +6,7 @@ import com.example.bushv.example.domain.entity.Theme
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+const val cardsCount = 5
 
 class Repository(private val appDatabase: AppDatabase) {
 
@@ -32,8 +33,8 @@ class Repository(private val appDatabase: AppDatabase) {
             loadIterator.setThemeCounts(EnglishLevel.values()[i], countThemes)
         }
 
-        val themes: ArrayList<Theme> = ArrayList(4) // TODO 3 by default, change
-        while (themes.size < 4 && loadIterator.hasNextForLoad()) {
+        val themes: ArrayList<Theme> = ArrayList(cardsCount)
+        while (themes.size < cardsCount && loadIterator.hasNextForLoad()) {
             val theme = loadIterator.loadNext()
             themes.add(theme)
         }
