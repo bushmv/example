@@ -201,6 +201,4 @@ object AppPref {
             "4" -> { advancedThemesCount++; advancedExamplesCount += examplesCount }
         }
     }
-
-
 }

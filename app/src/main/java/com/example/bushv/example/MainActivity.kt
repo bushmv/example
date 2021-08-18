@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity() {
                 .append(this.get(Calendar.YEAR))
         }
         val weekStatistics =
-            WeekStatistics(AppPref.lastSavedLoginData, sb.toString(), AppPref.weekValues, 3)
+            WeekStatistics(AppPref.lastSavedLoginData, sb.toString(), AppPref.weekValues, Calendar.getInstance().get(Calendar.DAY_OF_WEEK))
         AppPref.weekStatistics = weekStatistics
     }
 
@@ -121,7 +121,6 @@ class MainActivity : AppCompatActivity() {
         val navDirection =
             SplashScreenFragmentDirections.actionSplashScreenFragmentToThemeChooserFragment()
         navController.navigate(navDirection)
-
     }
 
     private fun showExplanationFragment() {
