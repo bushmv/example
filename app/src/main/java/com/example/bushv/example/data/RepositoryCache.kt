@@ -59,13 +59,15 @@ class RepositoryCache {
     }
 
     fun favoriteExamples(): ArrayList<Example> {
-        // currentFavoritesInCache - now in cache
+        // cachedExamplesByThemeId - list of themes and examples for each theme,
+        // that can be (but may not be) is favorites list
         // cachedFavoriteExamples - cached favorites from db
-        val currentFavoritesInCache = ArrayList<Example>()
+        val favorites = ArrayList<Example>()
         cachedExamplesByThemeId.entries.forEach { entry ->
-            currentFavoritesInCache.addAll(entry.value.filter { it.isFavorite })
+            favorites.addAll(entry.value.filter { it.isFavorite })
         }
-        return ArrayList(currentFavoritesInCache + cachedFavoriteExamples)
+        favorites.addAll(cachedFavoriteExamples.filter { it.isFavorite })
+        return ArrayList(favorites)
     }
 
     fun update(completedTheme: Theme) {
