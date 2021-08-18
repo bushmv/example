@@ -24,6 +24,8 @@ class StatisticsViewModel: ViewModel() {
         }
     }
 
+    fun completedToAllString(): String = "${AppPref.totalCompletedExamplesInApp} / ${AppPref.totalExamplesInApp}"
+
     fun progressFor(level: EnglishLevel): Int {
         return when(level) {
             EnglishLevel.BEGINNER -> checkOnNan(beginnerPercent)

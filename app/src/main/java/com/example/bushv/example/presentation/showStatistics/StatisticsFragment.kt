@@ -1,5 +1,6 @@
 package com.example.bushv.example.presentation.showStatistics
 
+import android.graphics.Typeface
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.example.bushv.example.R
 import com.example.bushv.example.data.AppPref
 import com.example.bushv.example.databinding.FragStatisticsBinding
 import com.example.bushv.example.domain.entity.EnglishLevel
@@ -29,13 +31,12 @@ class StatisticsFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
-
-            cardStatisticsCount.text = "${AppPref.totalCompletedExamplesInApp} / ${AppPref.totalExamplesInApp}"
+            cardStatisticsCount.text = viewModel.completedToAllString()
             val percentWordCompleted =
                 if (AppPref.totalExamplesInApp > 0) {
                         (AppPref.totalCompletedExamplesInApp * 100f / AppPref.totalExamplesInApp).roundToInt()
                 } else {
-                    Toast.makeText(requireContext(), "похоже при вычислении процента пройденных примеров что то пошло не так", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), getString(R.string.error_when_calculate_message), Toast.LENGTH_SHORT).show()
                     0
                 }
 
@@ -71,7 +72,19 @@ class StatisticsFragment: Fragment() {
                 sunColumn.layoutParams.height = (scale * weekStat[6].height).roundToInt()
                 sunTitle.text = weekStat[6].title
                 root.requestLayout()
+
+                when(AppPref.weekStatistics.dayOfWeek) {
+                    1 -> { sunTitle.textSize = 18f; sunTitle.typeface = Typeface.DEFAULT_BOLD }
+                    2 -> { monTitle.textSize = 18f; monTitle.typeface = Typeface.DEFAULT_BOLD }
+                    3 -> { tueTitle.textSize = 18f; tueTitle.typeface = Typeface.DEFAULT_BOLD }
+                    4 -> { wedTitle.textSize = 18f; wedTitle.typeface = Typeface.DEFAULT_BOLD }
+                    5 -> { thuTitle.textSize = 18f; thuTitle.typeface = Typeface.DEFAULT_BOLD }
+                    6 -> { friTitle.textSize = 18f; friTitle.typeface = Typeface.DEFAULT_BOLD }
+                    7 -> { satTitle.textSize = 18f; satTitle.typeface = Typeface.DEFAULT_BOLD }
+                }
             }
+
+
         }
     }
 }

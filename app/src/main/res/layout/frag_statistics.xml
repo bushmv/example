@@ -203,58 +203,58 @@
                 <View
                     android:id="@+id/mon_column"
                     style="@style/column"
-                    android:layout_height="15dp"
+                    tools:layout_height="15dp"
                     app:layout_constraintEnd_toStartOf="@id/tue_column"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:ignore="MissingConstraints" />
+                    app:layout_constraintBottom_toBottomOf="@id/line"/>
 
                 <View
                     android:id="@+id/tue_column"
                     style="@style/column"
-                    android:layout_height="15dp"
+                    tools:layout_height="10dp"
                     app:layout_constraintEnd_toStartOf="@id/wed_column"
                     app:layout_constraintStart_toEndOf="@id/mon_column"
-                    tools:ignore="MissingConstraints" />
+                    app:layout_constraintBottom_toBottomOf="@id/line"/>
 
                 <View
                     android:id="@+id/wed_column"
                     style="@style/column"
-                    android:layout_height="34dp"
+                    tools:layout_height="34dp"
                     app:layout_constraintEnd_toStartOf="@id/thu_column"
                     app:layout_constraintStart_toEndOf="@id/tue_column"
-                    tools:ignore="MissingConstraints" />
+                    app:layout_constraintBottom_toBottomOf="@id/line"/>
 
                 <View
                     android:id="@+id/thu_column"
                     style="@style/column"
-                    android:layout_height="59dp"
+                    tools:layout_height="59dp"
                     app:layout_constraintEnd_toStartOf="@id/fri_column"
                     app:layout_constraintStart_toEndOf="@id/wed_column"
-                    tools:ignore="MissingConstraints" />
+                    app:layout_constraintBottom_toBottomOf="@id/line"/>
 
                 <View
                     android:id="@+id/fri_column"
                     style="@style/column"
-                    android:layout_height="16dp"
+                    tools:layout_height="16dp"
                     app:layout_constraintEnd_toStartOf="@id/sat_column"
                     app:layout_constraintStart_toEndOf="@id/thu_column"
-                    tools:ignore="MissingConstraints" />
+                    app:layout_constraintBottom_toBottomOf="@id/line"/>
 
                 <View
                     android:id="@+id/sat_column"
                     style="@style/column"
-                    android:layout_height="51dp"
+                    tools:layout_height="51dp"
                     app:layout_constraintEnd_toStartOf="@id/sun_column"
                     app:layout_constraintStart_toEndOf="@id/fri_column"
-                    tools:ignore="MissingConstraints" />
+                    app:layout_constraintBottom_toBottomOf="@id/line"/>
 
                 <View
                     android:id="@+id/sun_column"
                     style="@style/column"
-                    android:layout_height="100dp"
+                    tools:layout_height="100dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/sat_column"
-                    tools:ignore="MissingConstraints" />
+                    app:layout_constraintBottom_toBottomOf="@id/line"/>
 
                 <TextView
                     android:id="@+id/mon_title"
@@ -267,7 +267,7 @@
                 <TextView
                     android:id="@+id/tue_title"
                     style="@style/Base.Widget.AppCompat.TextView.columnTitle"
-                    tools:text="Tue\n16.08\n(27)"
+                    tools:text="Tue\n16.08\n(10)"
                     app:layout_constraintLeft_toLeftOf="@id/tue_column"
                     app:layout_constraintRight_toRightOf="@id/tue_column"
                     app:layout_constraintTop_toBottomOf="@id/mon_column" />
@@ -275,7 +275,7 @@
                 <TextView
                     android:id="@+id/wed_title"
                     style="@style/Base.Widget.AppCompat.TextView.columnTitle"
-                    tools:text="Wed\n17.08\n(27)"
+                    tools:text="Wed\n17.08\n(34)"
                     app:layout_constraintLeft_toLeftOf="@id/wed_column"
                     app:layout_constraintRight_toRightOf="@id/wed_column"
                     app:layout_constraintTop_toBottomOf="@id/mon_column" />
@@ -283,7 +283,7 @@
                 <TextView
                     android:id="@+id/thu_title"
                     style="@style/Base.Widget.AppCompat.TextView.columnTitle"
-                    tools:text="Thu\n18.08\n(27)"
+                    tools:text="Thu\n18.08\n(65)"
                     app:layout_constraintLeft_toLeftOf="@id/thu_column"
                     app:layout_constraintRight_toRightOf="@id/thu_column"
                     app:layout_constraintTop_toBottomOf="@id/mon_column" />
@@ -307,7 +307,7 @@
                 <TextView
                     android:id="@+id/sun_title"
                     style="@style/Base.Widget.AppCompat.TextView.columnTitle"
-                    tools:text="Sun\n21.08\n(27)"
+                    tools:text="Sun\n21.08\n(95)"
                     app:layout_constraintLeft_toLeftOf="@id/sun_column"
                     app:layout_constraintRight_toRightOf="@id/sun_column"
                     app:layout_constraintTop_toBottomOf="@id/mon_column" />

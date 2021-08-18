@@ -74,8 +74,7 @@ class WeekStatistics(
     fun saveLastLogin(): String = nowDate
 
     fun increase() {
-        val index = (dayOfWeek + 5) % daysOfWeek
-        values[index]++
+        values[index(dayOfWeek)]++
     }
 
     private fun index(oldIndex: Int): Int = (oldIndex + 5) % daysOfWeek
@@ -104,5 +103,4 @@ class WeekStatistics(
         val month = calendar.get(Calendar.MONTH)
         return "${shortDayOfWeek}\n${dayOfMonth}:${month}\n${values[index]}"
     }
-
 }

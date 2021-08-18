@@ -40,6 +40,7 @@
     <string name="tap_in_any_place">нажмите в любом месте для продолжения</string>
     <string name="no_show_more">больше не показывать</string>
     <string name="examples_completed">примеров пройдено</string>
+    <string name="error_when_calculate_message">похоже при вычислении процента пройденных примеров что то пошло не так</string>
 
     // plurals
     <plurals name="example_count_plurals_template">
