@@ -10,10 +10,10 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId "com.example.bushv.example"
+        applicationId "com.bush_example_app.bushv.bush_example_app"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 1
+        versionCode 4
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

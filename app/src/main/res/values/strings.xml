@@ -41,6 +41,12 @@
     <string name="no_show_more">больше не показывать</string>
     <string name="examples_completed">примеров пройдено</string>
     <string name="error_when_calculate_message">похоже при вычислении процента пройденных примеров что то пошло не так</string>
+    <string name="sound_not_supported_message">К сожалению, голосовое воспроизведение недоступно на данном устройстве.</string>
+    <string name="explanation_5">Наслаждайтесь тем, как улучшается твой английский от простого повторения</string>
+    <string name="explanation_4">Сохраняйте понравившиеся примеры</string>
+    <string name="explanation_3">Выберите уровень сложности и повторите предложение еще раз</string>
+    <string name="explanation_2">Просто повторите предложение</string>
+    <string name="explanation_1">Выберите категорию по описанию</string>
 
     // plurals
     <plurals name="example_count_plurals_template">
