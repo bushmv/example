@@ -1,0 +1,7 @@
+types of house/виды жилья|все мы где то живем. В этой категории собраны слова на тему типы жилья.|1
+cottage|коттетж, загородный дом|They have a summer {cottage} by the seacoast|У них есть {коттедж} на берегу моря
+palace|дворец|The {palace} is full of priceless antiques|{Дворец} полон бесценного антиквариата
+rented flat|съемная квартира|I was living in a {rented flat} at that time|В то время я жил в {съемной квартире}
+tent|палатка|We spent the night in the woods in a {tent}|Мы провели ночь в лесу в {палатке}
+dormitory|общежитие|I left the textbook in the {dormitory}|Я оставил учебник в {общежитии}
+villa|вилла|They rented a seaside {villa} for two weeks|Они арендовали {виллу} на берегу моря на две недели

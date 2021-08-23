@@ -1,0 +1,7 @@
+beauty words/красивые слова|Слова в этой категории или сами по себе красиво звучат, или описывают что то очень красивое. Очень субьективный набор|3
+lullaby|колыбельная|She was singing a {lullaby} and putting the baby down for the night|Она пела {колыбельную} и укладывала ребенка на ночь
+Luminous|светящийся, светлый|The room was {luminous} with sunlight|Комната была ярко {освещена} солнцем
+bumblebee|шмель|{Bumblebee} species are not normally aggressive, but may sting in defence of their nest, or if harmed|{Шмели} обычно не агрессивны, но могут ужалить при защите своего гнезда или в случае причинения вреда
+Constellation|созвездие|It's a little hard to see with the city lights, but that W-shaped {constellation} is Cassiopeia|В свете городских огней его трудновато разглядеть, но это W-образное {созвездие} - Кассиопея
+Faith|вера, доверие|Nothing is more important to her than her {faith} in God|Для неё нет ничего важнее {веры} в Бога
+hilarious|веселый, смешной|She did a {hilarious} imitation of her mother|Она сделала {смешную} пародию на свою мать

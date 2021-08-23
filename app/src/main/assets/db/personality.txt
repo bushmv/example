@@ -1,0 +1,17 @@
+personality/личность|Слова на тему личных качеств человека, которые мы приобретаем в течение жизни.|4
+active|активный|He leads a full, {active} life|Он ведет полноценную, {активную} жизнь
+polite|вежливый|I'm afraid I wasn't very {polite} to her|Боюсь, я был не очень {вежлив} с ней
+grateful|благодарный|I'll be eternally {grateful} to you for this|Я буду бесконечно {благодарен} вам за это
+cheerful|веселый, бодрый|She was feeling more {cheerful} than before|Она чувствовала себя {бодрее}, чем раньше
+punctual|пунктуальный|i am not a particularly {punctual} person|Я не особенно {пунктуальный} человек
+modest|скромный|He's a very {modest} man|Он очень {скромный} человек
+witty|остроумный|They were very intellectual and {witty}|Они были очень интеллектуальными и {остроумными}
+reliable|надежный|He was the most {reliable} employee in our company|Он был самым {надежным} работником в нашей компании
+honest|честный|I thought he was {honest}, but I was wrong|Я думала, что он {честный}, но я ошибалась
+aggressive|агрессивный|He's always been {aggressive}, ever since he was a kid|Он всегда был {агрессивным}, с самого детства
+two-faced|двуличный|I didn't expect you to be so {two-faced}|Не ожидал что ты будешь таким {двуличным}
+reserved|замкнутый|My son is a little {reserved}|Мой сын немного {замкнутый}
+lazy|ленивый|He's so {lazy} it's unbelievable|Он настолько {ленив}, что просто невероятно
+naive|наивный|You can be so {naive} sometimes|Иногда ты бываешь таким {наивным}
+touchy|обидчивый|Be careful what you say because he's {touchy}|Будьте осторожны в своих словах, потому что он {обидчив}
+selfish|эгоистичный|You think I'm too {selfish}?|Ты думаешь, я слишком {эгоистична}?

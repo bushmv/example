@@ -1,0 +1,5 @@
+seasons/времена года|Примеры со всеми 4-мя временаи года: лето, осень, зима, весна. Больше добавить нечего|0
+autumn|осень|It happened in {autumn}|Это случилось {осенью}
+spring|весна|Isn't {spring} beautiful?|Разве {весна} не прекрасна?
+winter|зима|winter is {coming}|{зима} приближается 
+summer|лето|It was a hot {summer} day|Это был жаркий {летний} день

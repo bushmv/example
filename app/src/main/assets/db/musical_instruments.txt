@@ -1,0 +1,9 @@
+musical instruments/музыкальные инструменты|В этой категории собраны некоторые музыкальные инструменты|2
+piano|фортепиано|She is going to give a {piano} recital|Она собирается дать {фортепианный} концерт
+violin|скрипка|She practises the {violin} every day|Она занимается на {скрипке} каждый день
+guitar|гитара|He plays the {guitar} in the town band|Он играет на {гитаре} в одной группе города
+trumpet|труба|The {trumpet} solo was the high point of the concert|Соло на {трубе} стало кульминацией концерта
+saxophone|саксофоне|He has mastered the {saxophone}|Он освоил игру на {саксофоне}
+flute|флейта|Miranda likes to play Celtic music on her {flute}|Миранда любит играть кельтскую музыку на своей {флейте}
+drum|барабан|The {drum} is one of the oldest musical instruments|{Барабан} - один из самых древних музыкальных инструментов
+castanets|кастаньеты|I enjoyed playing the {castanets} last night|Я наслаждался игрой на {кастаньетах} прошлой ночью

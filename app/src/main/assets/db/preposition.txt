@@ -1,0 +1,17 @@
+prepositions/предлоги|Предлоги в английском языке нередко заменяют падеж в русском языке. Различают следующие формы английских предлогов: простые, производные(происходят от других частей речи), сложные(состоят из нескольких компонентов), состовные(словосочетания слово/слова + предлог). Основая роль предлогов - указать место, время, автора, направление и т.д. В предложениях предлоги в основном ставятся перед существительными|0
+in|в, на, внутри|Isn't Mark {in} Boston now?|Марк сейчас {в} Бостоне?
+at|около, на, при|She looked {about}|Она огляделась {вокруг}
+above|выше, над, более|It is {above} me| Это {выше} моего понимания
+after|после|Call me {after} you arrive|Позвоните мне {после} прибытия
+across|через|We saw them walking {across} the street|Мы видели, как они шли {через} дорогу
+amid|среди, между|He sat {amid} the trees|Он сидел {среди} деревьев
+because|потому что|I ran {because} I was afraid|Я побежал, {потому что} испугался
+before|до, перед|He left long {before} morning came|Он ушел задолго {до} наступления утра
+but|но, а, кроме|There was no one there {but} him|Там не было никого, {кроме} него
+due to|из-за|He shortened his trip {due to} illness|Он сократил свою поездку {из-за} болезни
+except|кроме|The store is open daily {except} Sundays|Магазин открыт ежедневно, {кроме} воскресенья
+if|если|Would you mind {if} I open a window?|Вы не возражаете, {если} я открою окно?
+in case of|в случае|{In case of} fire, break the glass|{В случае} пожара разбейте стекло
+next to|около, рядом|The bank is right {next to} the pharmacy|Банк находится {рядом} с аптекой
+or|или|Would you like a coffee {or} something?|Хотите кофе {или} что-нибудь еще?
+under|под|Write your name {under} your picture|Напишите свое имя {под} фотографией

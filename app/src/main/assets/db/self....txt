@@ -1,0 +1,7 @@
+self.../выражения, начинающиеся с self|В данной категории собраны слова, начинающиеся на self. Обычно self означает направленность на себя.|4
+Self-absorbed|погруженный в себя|I see a selfish {self-absorbed} man|Я вижу эгоистичного {поглощенного собой} человека
+Self-adaptive|самоадаптивный|Improving upon their work, the same authors have made their algorithm {self-adaptive}|Усовершенствовав свою работу, те же авторы сделали свой алгоритм {самоадаптивным}
+self-assertive|самоуверенный, напористый|You are in a {self-assertive} mood today|Сегодня вы находитесь в {самоуверенном} настроении
+self-adhesive|самоклеящийся|Stick {self-adhesive} hooks to the wall in the appropriate place|Приклейте {самоклеящиеся} крючки к стене в соответствующем месте
+Self-esteem|самоуважение, чувство собственного достоинства|Your words touched her {self-esteem}|Ваши слова затронули ее {самооценку}
+self-control|самообладание, сдержанность|It took all his {self-control} not to shout at them|Ему потребовалось все его {самообладание}, чтобы не закричать на них

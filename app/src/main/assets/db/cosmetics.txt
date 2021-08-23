@@ -1,0 +1,8 @@
+cosmetics/косметика|Комметика позволяет нам скрыть наши внешние недостатки. В этой категории собраны различные слова на тему косметики.|3
+mascara|тушь для ресниц|She was crying and her {mascara} had smudged|Она плакала, и ее {тушь} размазалась
+face cream|крем для лица|I use {face cream} regularly to keep my face soft|Я регулярно пользуюсь {кремом для лица}, чтобы сохранить его мягкость
+powder|пудра, порошок|She's just gone to {powder} her nose|Она только что пошла {попудрить} носик
+lipstick|помада|She was wearing bright red {lipstick}|На ней была ярко-красная {помада}
+deodorant|дезодорант|I need some scented {deodorant}|Мне нужен ароматизированный {дезодорант}
+nail polish|лак для ногтей|She chose this {nail polish} to match the color of her dress|Она выбрала этот {лак для ногтей} под цвет своего платья
+perfume|духи|She smelled the different {perfumes} at the store.|Она понюхала разные {духи} в магазине

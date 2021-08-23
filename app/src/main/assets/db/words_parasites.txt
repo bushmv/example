@@ -1,0 +1,9 @@
+words parasites/слова паразиты|Слова паразиты - это слова, которые не несут в себе смысловой нагрузки и от которых следует избавляться. Однако многие люди используют их тогда, когда не могут сразу сформулировать свою мысль или для того, чтобы выйграть время. Примеры таких слов: ну, типа, короче, как бы сказать и т.д.|1
+well|ну, что ж|{Well}, now tell me all about yourself|{Ну}, а теперь расскажите мне о себе
+wow|здорово, ого, ух ты|{Wow}! You've got the beach right on your doorstep!|{Ух ты}! Пляж прямо у вас на пороге!
+you see|Видишь ли, понимаешь|{You see}, I'm one of those people who likes to try new things|{Видишь ли}, я из тех людей, которые любят пробовать новое
+by the way|кстати|{By the way}, what time is it?|{Кстати}, сколько сейчас времени?
+you know|знаешь|{You know}, I really liked this movie|{Знаешь}, мне очень понравился этот фильм
+anyway|в любом случае|{Anyway}, I must be going now|{В любом случае}, мне надо идти
+I mean|я имею в виду|{I mean}, I think you've been acting a little rough|{Я имею в виду}, я думаю, что ты вел себя немного грубо
+sort of|как бы, вроде|I'm {sort} of happy with how it went, but not really|Я {вроде} доволен тем, как все прошло, но не совсем

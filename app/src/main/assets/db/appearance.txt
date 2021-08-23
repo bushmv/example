@@ -1,0 +1,18 @@
+appearance/внешний вид|Все мы отличаемся внешне: у нас разный рост, вес, цвет глаз и физическая форма. В этой категории представлены слова на тему описания внешнего вида|2
+tall|высокий|He's a {tall}, fair-haired guy|Он {высокий}, светловолосый парень
+posture|осанка|She maintained a queenly {posture}|Она сохраняла королевскую {осанку}
+gait|походка|He has an awkward {gait}|У него неловкая {походка}
+look attractive|выглядеть привлекательно|She {looked attractive} in her slim, tailored suit|Она {выглядела привлекательно} в своем тонком, сшитом на заказ костюме
+freckle|веснушки|She has red hair and {freckles}|У нее рыжеватые волосы и {веснушки}
+pale|бледный|He looked very {pale} and exhausted|Он выглядел очень {бледным} и измученным
+thick eyelashes|густые ресницы|I'm lucky to have {thick eyelashes}|Мне повезло иметь {густые ресницы}
+short-sighted|близорукий|He is {short-sighted} from his childhood|У него {близорукость} с детства
+saucy glance|кокетливый, дерзкий взгляд|What set her apart from the other girls was her {saucy glance}|От других девушек ее отличал {дерзкий взгляд}
+dark-haired|темноволосый, брюнет|Have you seen a {dark-haired} woman pass by?|Видели ли вы проходящую мимо {темноволосую} женщину?
+silky|шелковистые|Her hair was soft and {silky}|Ее волосы были мягкими и {шелковистыми}
+plaited|заплетенные в косу|Girls' hair was always long and {plaited}|Волосы у девочек всегда были длинными и {заплетенными}
+painted lips|накрашенные губы|The only thing I remember for sure was her red {painted lips}|Единственное, что я точно помню, это ее красные {накрашенные губы}
+tattoo|татуировка|He had a {tattoo} on his left arm|У него была {татуировка} на правой руке
+broad shoulders|широкие плечи|He was almost two meters tall, with {broad shoulders}|Он был почти двухметрового роста, {с широкими плечами}
+scar|шрам|He bared his chest to show the {scar}|Он обнажил грудь, чтобы показать {шрам}
+unshaven|небритый|An {unshaven} man walked into the bar|В бар вошел {небритый} мужчина

@@ -1,0 +1,9 @@
+re words/начинающиеся с re|Слова, начинающиеся с re часто напоминают слова на русском, начинающиеся на "пере". В этой категории собраны подобные слова.|2
+remake|переделанный, новая версия|The {remake} was OK but it cannot compare with the original|{Ремейк} получился неплохим, но он не может сравниться с оригиналом
+rewrite|переписывать|I had to {rewrite} the composition again|Мне пришлось {переписывать} сочинение заново
+recycle|повторно использовать|They're studying various ways to {recycle} garbage into fuel|Они изучают различные способы {переработки} мусора в топливо
+recreate|воссоздавать|You can never {recreate} the feeling of winning for the first time|Вы никогда не сможете {воссоздать} ощущение первой победы
+reform|реформировать, преобразовывать|The government has ambitious plans to {reform} the economy|У правительства амбициозные планы по {реформированию} экономики
+reuse|переиспользовать|I can {reuse} that container|Я могу повторно {использовать} этот контейнер
+refresh|освежить, повторить|I looked at the map to {refresh} my memory of the route|Я посмотрел на карту, чтобы {освежить} в памяти маршрут
+review|пересмотр, обзор|We will {review} your situation and decide how we can help you|Мы {пересмотрим} вашу ситуацию и решим, как мы можем вам помочь

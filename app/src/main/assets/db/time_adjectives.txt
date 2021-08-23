@@ -1,0 +1,12 @@
+time adjectives/прилагательные на тему времени|В категории прилагательные на тему времени собраны прилагательные, которые описывают как давно, как долго, как часто и т.д. что то происходило.|1
+current|текущий|I'm worried about the {current} political situation|Меня беспокоит {текущая} политическая ситуация
+ancient|древний, античный|They studied both {ancient} and modern history|Они изучали как {древнюю}, так и современную историю
+modern|современный|{Modern} trains are very comfortable|{Современные} поезда очень комфортабельны
+long-term|долгосрочные|Are you ready to make a {long-term} commitment?|Готовы ли вы взять на себя {долгосрочные} обязательства?
+recent|недавний|There were also two {recent} arrests for public disturbance|Также {недавно} были произведены два ареста за нарушение общественного порядка
+immediate|немедленный|The moment demanded {immediate} attention|Момент требовал {немедленного} внимания
+young|молодой|She looks {young} for her age|Она выглядит {молодо} для своего возраста
+future|будущий, будущее|We cannot {predict} future events|Мы не можем предсказать {будущие} события
+ongoing|продолжающийся, непрерывный|Yes, he probably had {ongoing} depression|Да, вероятно, у него была {продолжительная} депрессия
+annual|ежегодный|You will receive {annual} salary increments every September|Вы будете получать {ежегодную} прибавку к зарплате каждый сентябрь
+daily|ежедневный|I always buy a {daily} newspaper|Я всегда покупаю {ежедневную} газету

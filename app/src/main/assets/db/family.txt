@@ -1,0 +1,12 @@
+family/семья|Для многих людей семья - самое важноев жизни. В этой категории собраны слова на тему родства людей.|0
+aunt|тетя|First of all, my {aunt} and I visited the amusement park|Сначала мы с {тетей} посетили парк развлечений
+brother|брат|That's what happened with my {brother}|Вот что произошло с моим {братом}
+father|отец|My {father} taught me to swim|Мой {отец} научил меня плавать
+one-parent family|неполная семья, семья с одним родителем|I was born and raised in a {one-parent family}|Я родился и вырос в {неполной семье}
+distant relatives|дальние родственники|Get ready, we're going to visit {distant relatives}|Собирайся, мы едем к {дальним родственникам}
+married|женат, замужем|She is {married} with three children|Она {замужем}, у нее трое детей
+twins|близнецы|There is no appreciable distinction between the {twins}|Между {близнецами} нет заметного различия
+love match (marriage)|брак по любви|Her marriage to John was a {love match}|Ее брак с Джоном был {по любви}
+son|сын|Their {son} became a famous judge|Их {сын} стал известным судьей
+daughter|дочь|Her {daughter} was very goal-oriented|Ее {дочь} была очень целеустремленной
+stepfather|отчим|Jim really hates her {stepfather}|Джим действительно ненавидит своего {отчима}

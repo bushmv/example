@@ -1,0 +1,15 @@
+another translation/другой перевод|В английском языке есть слова, очень похожие на русские если читать их по буквам. Но такие слова часто переводятся по другому. Например, accurate - не аккуратный, а точный; magazine - журнал а не магазин. В категории другой перевод представлены подобные слова|3
+accurate|точный, правильный|My watch is not very {accurate}|Мои часы не очень {точные}
+attraction|привлечение, достопримечательность|The waterfall continues to be the main {attraction} at the park|Водопад по-прежнему является главной {достопримечательностью} парка
+cereal|зерновой, хлебный злак, хлопья|I have a bowl of {cereal} every morning|Каждое утро я ем миску {хлопьев}
+clay|глина|The {clay} hardened in the fire|{Глина} затвердела в огне
+data|данные|The {data} had been culled from a variety of sources|{Данные} были собраны из различных источников
+fabric|такнь, материя|She bought {fabric} to make shirts out of|Она купила {ткань}, чтобы сшить из нее рубашки
+family|семья|She is from a very wealthy {family}|Она из очень богатой {семьи}
+list|список|The {list} of ingredients included 250g of almonds|{Список} ингридиентов включал 250грамм миндаля
+magazine|журнал|The {magazine} likes to publish articles with alternative viewpoints|{Журнал} любит публиковать статьи с альтернативными точками зрения
+mayor|мэр|The {mayor} proposed a plan for a new bridge|{Мэр} предложил план строительства нового моста
+patron|покровитель, заступник|Catherine the Great was a {patron} of the arts and sciences|Екатерина Великая была {покровителем} искусств и наук
+replica|копия|This {replica} gun is indistinguishable from the real one|Эта {копия} оружия неотличима от настоящего
+troop|войска, отряд|It was designed to be a {troop} transport plane|Он был разработан как транспортный самолет для перевозки {войск}
+scenery|пейзаж|We looked out the window and enjoyed the {scenery}|Мы смотрели в окно и наслаждались {пейзажем}

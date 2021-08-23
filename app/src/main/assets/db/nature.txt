@@ -1,0 +1,21 @@
+nature/природа|Природа часто дарим нам явления, удивительные по своей красоте. В этой категории собраны различные природные явления.|0
+rainbow|радуга|A {rainbow} is a natural phenomenon|{Радуга} - это природное явление
+forest|лес|The road goes through the {forest}|Дорога проходит через {лес}
+sun|солнце|The {sun} rises in the east and sets in the west|{Солнце} восходит на востоке и заходит на западе
+jungle|джунгли|They spent two months in the {jungle}|Они провели два месяца в {джунглях}
+bog|болото|Do you know where the {bog} is two miles from here?|Знаешь где находится {болото} в двух милях отсюда?
+waterfall|водопад|Let's have our picnic by the {waterfall}|Давайте устроим пикник у {водопада}
+meadow|луг, поляна|We had to walk through a wet {meadow}|Нам пришлось идти через мокрый {луг}
+coast|побережье|They live in a town along the east {coast}|Они живут в городе на восточном {побережье}
+mountain|гора|They camped at the foot of the {mountain}|Они разбили лагерь у подножия {горы}
+desert|пустыня|Nobody likes to live in the {desert}|Никто не любит жить в {пустыне}
+volcano|вулкан|The {volcano} last erupted 25 years ago|Последний раз {вулкан} извергался 50 лет назад
+cloud|облако, туча|A dark {cloud} suddenly blotted out the sun|Темная {туча} внезапно заслонила солнце
+valley|долина|Rivers traverse the {valley} floor|Реки пересекают дно {долины}
+sand|песок|The water permeated the {sand}|Вода пропитала {песок}
+ocean|океан|Our room overlooks the {ocean}|Из нашего номера открывается вид на {океан}
+sea|море|I'm terrified of flying I'd rather go by {sea}|Я до ужаса боюсь летать, я бы лучше отправился по {морю}
+peninsula|полуостров|A long {peninsula} juts out into the sea|Длинный {полуостров} вдается в море
+wind|ветер|There isn't enough {wind} to fly a kite|{Ветер} слишком слабый чтобы запустить воздушного змея
+rain|дождь|I suspect it will {rain}|Подозреваю, что будет {дождь}
+lightning|молния|{Lightning} never strikes twice in the same place|{Молния} никогда не бьет дважды в одно и то же место

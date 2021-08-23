@@ -1,0 +1,19 @@
+in house/в доме|Категория, включающая в себя слова на тему дома: большинство предметов можно встретить у себя, протсо повернул голову.|1
+balcony|балкон|You can see the sea from our {balcony}|С нашего {балкона} видно море
+bathroom|ванная комната|The {bathroom} has a shower and tub|В {ванной комнате} есть душ и ванна
+cellar|подвал, погреб|He's got an impressively large store of wine in his {cellar}|В его {погребе} хранится внушительное количество вина
+door|дверь|Could you open the {door}, please?|Не могли бы вы открыть {дверь}, пожалуйста?
+flat|квартира|I lived in a {nice} flat|Я жила в приятной {квартире}
+floor|пол|The {floor} was covered with a red carpet|{Пол} был покрыт красным ковром
+kitchen|кухня|Delicious smells were emanating from the {kitchen}|Из {кухни} доносились вкусные запахи
+roof|крыша|The rain lashed against the {roof}|Дождь хлестал по {крыше}
+mirror|зеркало|She likes primping in front of the {mirror}|Ей нравится прихорашиваться перед {зеркалом}
+door handle|дверная ручка|Slowly, I turned the {door handle}|Медленно я повернул {дверную ручку}
+sofa|диван|The dog jumped onto the {sofa}|Собака запрыгнула на {диван}
+coffee table|журнальный столик|Today's paper is over on the {coffee table}|Сегодняшняя газета лежит на {журнальном столике}
+chandelier|люстра|A chandelier hung directly {overhead}|Прямо над головой висела {люстра}
+carper|ковер|We spread a {carpet} over the floor|Мы расстелили на полу {ковер}
+window|окно|She peeked out the {window} to see what happened|Она высунулась в {окно} посмотреть что случилось
+shelf|полка|The book I wanted to read was on the top {shelf}|Книга, которую я хотел прочитать, стояла на верхней {полке}
+light switch|выключатель света|Where's the {light switch}?|Где {выключатель}
+pillow|подушка|Please, Run upstairs and get me a {pillow}|Пожалуйста, сбегай наверх и принеси мне {подушку}

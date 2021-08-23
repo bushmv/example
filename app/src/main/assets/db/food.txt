@@ -1,0 +1,33 @@
+food/еда|Человек не проживет долго без еду, и в этой теме собраны различные слова и словосочетания на тему различных видов продуктов и еды|2
+cookie|печенье|He permitted himself one more {cookie}|Он позволил себе ещё одно {печенье}
+honey|мед|{Honey} is produced by bees|{Мед} производят пчелы
+candy|конфеты|The {candy} is chewy inside|У этих {конфет} внутри жевачка
+bacon|бекон|We used to have {bacon} and eggs for breakfast|Мы обычно ели {бекон} и яйца на завтрак
+beef|говядина|What would you like for dinner, {beef} or fish?|Что бы вы хотели на ужин, {говядину} или рыбу
+ham|ветчина|Would you like another slice of {ham}?|Хотите еще кусочек {ветчины}?
+liver|печень|We don't serve {liver} often because so many people dislike it|Мы не часто подаем {печень}, потому что многие люди ее не любят
+sausage|сосиска|They bought {sausages} for the picnic|Они купили {сосиски} для пикника
+mackerel|скумбрия|Bay leaf is an excellent herb for {mackerel}|Лавровый лист - отличная приправа для {скумбрии}
+trout|форель|The {trout} were already cut into pieces|{Форель} уже была порезана на куски
+broccoli|брокколи|Steam the carrots and {broccoli} for 6 minutes|Готовьте морковь и {брокколи} на пару в течение 6 минут
+cucumber|огурец|Peel the {cucumber} and chop it into small cubes|Очистите {огурец} и нарежьте его мелкими кубиками
+garlic|чеснок|Fry the onion and {garlic} for about two minutes|Обжарьте лук и {чеснок} в течение примерно двух минут
+potato|картофель|Fry the {potato} in a little sunflower oil|Обжарьте {картофель} в небольшом количестве подсолнечного масла
+almond|миндаль|Of all the nuts, {almonds} are my favorite|Из всех орехов {миндаль} я люблю больше всех
+banana|банан|Cut the {banana} in half lengthways|Разрежьте {банан} пополам вдоль
+blueberry|черника|We found a lot of {blueberries} in the woods|Мы нашли много {черники} в лесу 
+cherry|вишня|We lay on the roof, looked up at the sky and ate {cherries}|Мы лежали на крыше, смотрели на небо и ели {вишню}
+melon|дыня|She cut into the {melon} with a knife|Она разрезала {дыню} ножом
+plumn|слива|Now the farmer is growing wild {plums}|Сейчас фермер выращивает дикие {сливы}
+rice|рис|I'll have {rice} as a side dish|В качестве гарнира я возьму {рис}
+cheese|сыр|Would you like a slice of {cheese} with your bread?|Хотите ломтик {сыра} с хлебом?
+eggs|яица|You can't make omelet without breaking {eggs}|Вы не можете приготовить омлет, не разбив {яйца}
+ice cream|мороженное|After dinner, we'll have {ice cream} for dessert|После ужина у нас будет {мороженое} на десерт
+milk|молоко|Heat the {milk} until it is warm|Нагрейте {молоко} до теплого состояния
+chocolate|шоколад|Once I start eating {chocolate}, I can't stop|Как только я начинаю есть {шоколад}, я уже не могу остановиться
+croissant|круассан|She took a bite of her {croissant} and took a sip of coffee|Она откусила от {круассана} и сделала глоток кофе
+marshmallow|зефир|We toasted {marshmallow} over the fire|Мы поджаривали {зефир} на костре
+popcorn|попкорн|Place {popcorn} in a big bowl|Поместите {попкорн} в большую миску
+soda|газированная вода|I ordered fries and a {soda}|Я заказал картофель фри и {газировку}
+burger|бургер|He ate half his {burger} in one bite|Он съел половину своего {бургера} за один укус
+soup|суп|Cover up the {soup} to keep it hot|Накройте {суп} крышкой, чтобы он оставался горячим

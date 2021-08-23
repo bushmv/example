@@ -1,0 +1,15 @@
+clothes/одежда|Мы выбираем одежду в зависимости от цвета, сезона, удобства, особенности случая. В данной категории собраны слова и словосочетания на тему одежды.|2
+raincoat|дождевик, плащ|He had no {raincoat} on when the rain started|Когда начался дождь, на нем не было {дождевика}
+socks|носки|Your {socks} don't match each other|У вас разные {носки}
+strap|ремень|my jeans are falling off, I need a {strap}|Мои джинсы спадают, мне нужен {ремень}
+shorts|шорты|I pulled my {shorts} on and ran outside|Я натянул {шорты} и выбежал на улицу
+jeans|джинсы|She was wearing ripped {jeans}|На ней были рваные {джинсы}
+t-shirt|футболка|He was wearing a {T-shirt} painted in bright colors|На нем была {футболка}, раскрашенная в яркие цвета
+underwear|нижнее белье|Why are you standing here in your {underwear}|Почему ты стоишь здесь в {нижнем белье}
+slippers|тапочки|She put the {slippers} under the bed neatly|Она аккуратно поставила {тапочки} под кровать
+sneakers|кроссовки|These {sneakers} are designed to give your feet extra support|Эти {кроссовки} созданы для того, чтобы обеспечить вашим ногам дополнительную поддержку
+fur coat|(меховая) шуба|With her long {fur coat}, she always made a dramatic entrance|В своей длинной {шубе} она всегда эффектно выходила в свет
+evening dress|вечернее платье|She wore a single orchid on her {evening dress}|На {вечернем платье} она носила одну орхидею
+wedding dress|свадебное платье|Her {wedding dress} was decorated with lace|Ее {свадебное платье} было украшено кружевами
+gloves|перчатки|Help me find my {gloves}|помогите мне найти мои {перчатки}
+hat|шляпа|Julia was wearing a beautiful new {hat}|На Джулии была новая красивая {шляпа}

@@ -1,0 +1,9 @@
+apologize/извинения|Мы все совершаем ошибки. Их нужно уметь признавать. Слова и фразы из этой категории помогут выразить сожаления и извинения|2
+apologize|извиненяться|I want {to apologize}, again|Я хочу {извиниться} еще раз
+I'm sorry to say this|мне жаль это говорить|{I'm sorry to say this}, but I'm not coming|{Мне жаль это говорить}, но я не приду
+omission|упущение, оплошность|Excuse my {omission}|Простите мою {оплошность}
+fault|вина|I have to admit, it's entirely my {fault}|Стоит признать, это полностью моя {вина}
+not keeping my word|не сдержать слово|Forgive me for {not keeping my word}|Прости меня за то, что я {не сдержал своего слова}
+forgiveness|прощение|I want to ask your {forgiveness}|Я хочу попросить у тебя {прощения}
+regret|сожалеть|I deeply {regret} what I did|Я глубоко {сожалею} о том, что сделал
+forgive|прощать|I hope you can find it in yourself to {forgive} me|Я надеюсь, что ты сможешь найти в себе силы {простить} меня

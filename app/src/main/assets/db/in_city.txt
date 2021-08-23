@@ -1,0 +1,18 @@
+in city/в городе|В городе происходит много событий. Слова из этой категории описывают различные объекты города и то, что можно встретить просто прогуливаясь по городу|2
+bank|банк|He runs the fraud division of a regional {bank}|Он руководит отделом по борьбе с мошенничеством в местном {банке}
+circus|цирк|The children always love to go to the {circus}|Дети всегда любят ходить в {цирк}
+fountain|фонтан|The huge sculpture predominates over the {fountain}|Эта огромная скульптура возвышается над {фонтаном}
+bridge|мост|The {bridge} vibrated when a heavy truck passed|{Мост} вибрировал, когда по нему проезжал тяжелый грузовик
+church|церковь|The {church} is down the block|{Церковь} в конце квартала
+crossroad|перекресток|At the next {crossroad} turn left|На следующем {перекрестке} поверните налево
+hotel|отель|The {hotel} had a relaxed atmosphere|В {отеле} была расслабляющая атмосфера
+hospital|больница, госпиталь|He was taken to the {hospital} by ambulance|Он был доставлен в {больницу} на машине скорой помощи
+library|библиотека|The {library} will remain closed until next monday|{Библиотека} будет закрыта до следующего понедельника
+museum|музей|The {museum} has some interesting new exhibits from Italy|В {музее} есть несколько новых интересных экспонатов из Италии
+post office|почтовое отделение, почта|Where's the nearest {post office}?|Где находится ближайшее {почтовое отделение}?
+sidewalk|тротуар, пешеходная дорожка|A crowd began to gather on the {sidewalk}|На {тротуаре} начала собираться толпа
+stadium|стадион|The {stadium} has hosted numerous rock concerts|На {стадионе} проходили многочисленные рок-концерты
+street|улица|This {street} reaches to the beach|Эта {улица} доходит до пляжа
+traffic light|светофор|Cross over a road at the {traffic lights}, where the road is safe|Переходите дорогу по {светофору}, где дорога безопасна
+railway station|железнодорожная станция|Can you direct me to the nearest {railway station}?|Можете ли вы указать мне ближайшую {железнодорожную станцию}?
+market|рынок|I usually buy all my vegetables at the {market}|Обычно я покупаю все овощи на {рынке}

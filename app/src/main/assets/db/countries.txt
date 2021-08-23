@@ -1,0 +1,9 @@
+countries/страны|На Земле насчитывается почти 200 стран, перечислять все из них было бы довольно затратно по времени. В этой категории представлены лишь несколько из них.|1
+China|Китай|He has travelled extensively in {China}|Он много путешествовал по {Китаю}
+Russia|Россия|{Russia} has a wealth of coal and timber|{Россия} обладает богатыми запасами угля и древесины
+USA|Соединенные штаты Америки|United States of America is commonly abbreviated to {USA}|Соединённые Штаты Америки обычно сокращают до {США}
+Finland|Финляндия|Он родился в {Финляндии}, но вырос здесь|He was born in {Finland}, but grew up here
+Spain|Испания|We're going to {Spain} for our holidays|Мы собираемся в {Испанию} на каникулы
+Great Britain|Великобритания|His demeanor gave away at once that he was from {Great Britain}|Его манеры сразу выдавали, что он из {Великобритании}
+Japan|Япония|I'd like to visit {Japan} someday|Я бы хотел когда-нибудь посетить {Японию}
+Germany|Германия|I met him in {Germany} about ten years ago|Я познакомился с ним в {Германии} около десяти лет назад

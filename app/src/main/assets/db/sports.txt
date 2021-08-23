@@ -1,0 +1,13 @@
+sports/виды спорта|Спорт - это важная часть нашей жизни. В этой категории собраны различные виды спорта и просто спортивной активности|2
+beach volleyball|пляжный волейбол|She started competing in {beach volleyball} in 2012|Она начала участвовать в соревнованиях по {пляжному волейболу} в 2012 году
+cycling|езда на велосипеде|{Cycling} is highly beneficial to health and the environment|{Езда на велосипеде} является чрезвычайно полезной для здоровья и окружающей среды
+figure skating|фигурное катание|I was going in for {figure skating} when I was a child and achieved good results|Я занималась {фигурным катанием} в детстве и достигла хороших результатов
+champion|чемпион|She dreamt of future glory as an Olympic {champion}|Она мечтала о будущей славе олимпийской {чемпионки}
+score|счет|Does anyone know the final {score}?|Кто-нибудь знает окончательный {счет}?
+relay|эстафета|The essential point of {relay} racing is that it is a team effort|Суть {эстафеты} в том, что это командная работа
+wrestling|борьба|They'll be {wrestling} each other for the championship|Они будут {бороться} друг с другом за чемпионство
+archery|стрельба из лука|No one can match him in {archery}|Никто не может сравниться с ним в {стрельбе из лука}
+fencing|фехтование|He was also taking {fencing}, just because it was something new|Он также занимался {фехтованием}, просто потому что это было что-то новое
+gymnastics|гимнастика|{Gymnastics} is a sport that requires a considerable level of coordination|{Гимнастика} - это вид спорта, требующий значительного уровня координации
+hurdle race|бег с препятствиями|She's get a good chance of winning the {hurdle race}|У нее есть все шансы выиграть в Х{беге с препятствиями}
+table tannis|настольный теннис|Sam constantly brags about how well he plays {table tennis}|Сэм постоянно хвастается тем, как хорошо он играет в {настольный теннис}
